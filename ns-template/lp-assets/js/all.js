@@ -1,0 +1,6 @@
+
+
+$(document).ready(function(){$(".partnerSlider").slick({dots:!1,infinite:!0,autoplay:!0,autoplaySpeed:5e3,speed:600,slidesToShow:4,slidesToScroll:1,responsive:[{breakpoint:1200,settings:{slidesToShow:3,slidesToScroll:1,infinite:!0,dots:!1}},{breakpoint:1024,settings:{slidesToShow:2,slidesToScroll:1,infinite:!0,dots:!1}},{breakpoint:768,settings:{slidesToShow:1,slidesToScroll:1}},{breakpoint:480,settings:{slidesToShow:1,slidesToScroll:1}}]})});
+$(document).ready(function(){$(".regularC").slick({dots:!1,infinite:!0,autoplay:!0,autoplaySpeed:3e3,speed:600,slidesToShow:1,slidesToScroll:1,responsive:[{breakpoint:1024,settings:{slidesToShow:1,slidesToScroll:1,infinite:!0,dots:!1}},{breakpoint:800,settings:{slidesToShow:1,slidesToScroll:1}},{breakpoint:480,settings:{slidesToShow:1,slidesToScroll:1}}]}),$(".center").slick({dots:!1,infinite:!0,centerMode:!0,slidesToShow:3,slidesToScroll:3}),$(".variable").slick({dots:!1,infinite:!0,variableWidth:!0}),$(".lazy").slick({lazyLoad:"ondemand",infinite:!0})});
+
+$(".shopNow").on("click","a",function(t){t.preventDefault();var o=$(this).attr("href"),a=$(o).offset().top;$("body,html").animate({scrollTop:a},1500)});

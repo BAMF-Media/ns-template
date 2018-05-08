@@ -1,0 +1,336 @@
+/*============    FONTS    ===========*/
+@font-face {
+  font-family: 'SofiaProRegular';
+  src: url('../fonts/SofiaProRegular.eot');
+  src: url('../fonts/SofiaProRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProRegular.woff2') format('woff2'), url('../fonts/SofiaProRegular.woff') format('woff'), url('../fonts/SofiaProRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ApercuProMono';
+  src: url('../fonts/ApercuPro-Mono.eot');
+  src: url('../fonts/ApercuPro-Mono.eot?#iefix') format('embedded-opentype'), url('../fonts/ApercuPro-Mono.woff2') format('woff2'), url('../fonts/ApercuPro-Mono.woff') format('woff'), url('../fonts/ApercuPro-Mono.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SofiaProBold';
+  src: url('../fonts/SofiaProBold.eot');
+  src: url('../fonts/SofiaProBold.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProBold.woff2') format('woff2'), url('../fonts/SofiaProBold.woff') format('woff'), url('../fonts/SofiaProBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SofiaProBlack';
+  src: url('../fonts/SofiaProBlack.eot');
+  src: url('../fonts/SofiaProBlack.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProBlack.woff2') format('woff2'), url('../fonts/SofiaProBlack.woff') format('woff'), url('../fonts/SofiaProBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sofia Pro Medium';
+  src: url('../fonts/SofiaPro-Medium.woff2') format('woff2'), url('../fonts/SofiaPro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+/*Variables for fonts*/
+.apercuProMono {
+  font-family: 'ApercuProMono';
+  font-weight: normal;
+  font-style: normal;
+}
+.sofiaProM {
+  font-family: 'Sofia Pro Medium';
+  font-weight: 500;
+  font-style: normal;
+}
+.sofiaProR {
+  font-family: 'SofiaProRegular';
+  font-weight: normal;
+  font-style: normal;
+}
+.sofiaProB {
+  font-family: 'SofiaProBold';
+  font-weight: bold;
+  font-style: normal;
+}
+.sofiaProBlack {
+  font-family: 'SofiaProBlack';
+  font-weight: 900;
+  font-style: normal;
+}
+/*Variables for colors*/
+.whiteT {
+  color: #ffffff;
+}
+.bgWhite {
+  background: #ffffff;
+}
+.blackT {
+  color: #000000;
+}
+.darkBlue {
+  color: #1c2026;
+}
+.bgBlue {
+  background: #edf8f9;
+}
+.bgPink {
+  background: #ffebe6;
+}
+.grey {
+  color: #1c2026;
+}
+.purpleBg {
+  background: #f19495;
+}
+.lightGreen {
+  background: #8efef6;
+}
+.lightGrey {
+  background: #b7b8ba;
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 50px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: #000000;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.closeModalBtn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: #f19495;
+  z-index: 2;
+  color: #ffffff;
+  transition: 0.3s;
+  background: #f3bbcf;
+}
+.closeModalBtn:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  background: #ef9bb9;
+}
+.modal-body {
+  padding: 50px 40px 40px 40px;
+  background: url(../img/PromoCodeModal.png) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  text-align: center;
+  border: none;
+}
+.modal-body .h2 {
+  font-size: 43px;
+  letter-spacing: 1px;
+}
+.modal-body .useDiscount {
+  font-family: 'SofiaProRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 1.5em;
+}
+.modal-body .promoCode {
+  font-family: 'SofiaProBold';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 43px;
+  text-transform: uppercase;
+  margin-top: 0px;
+}
+.copied {
+  display: none;
+}
+.socialWrap {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialWrap li {
+  margin-right: 20px;
+}
+.socialWrap li:last-child {
+  margin-right: 0;
+}
+.socialWrap i {
+  color: #ffffff;
+}
+.socialWrap a {
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f19495;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.socialWrap a:hover {
+  transition: 0.3s;
+  background: #8efef6;
+}
+.share {
+  font-family: 'SofiaProRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 1.5em;
+  margin-bottom: 5px;
+}
+.copyText {
+  background: #f19495;
+  color: #ffffff;
+  border: none;
+  padding: 6px 17px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  .modal {
+    padding-top: 20px;
+  }
+  .modal-body .h2 {
+    font-size: 27px;
+  }
+  .modal-body .promoCode {
+    font-size: 27px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .modal-body .useDiscount {
+    font-size: 20px;
+  }
+  .modal-content {
+    width: 100%;
+  }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  .modal {
+    padding-top: 20px;
+  }
+  .modal-body .h2 {
+    font-size: 27px;
+  }
+  .modal-body .promoCode {
+    font-size: 27px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .modal-body .useDiscount {
+    font-size: 20px;
+  }
+  .modal-content {
+    width: 100%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .modal {
+    padding-top: 30px;
+  }
+  .modal-body .h2 {
+    font-size: 39px;
+  }
+  .modal-content {
+    width: 80%;
+  }
+}
+@media (min-width: 769px) and (max-width: 993px) {
+  .modal {
+    padding-top: 20px;
+  }
+  .modal-body .h2 {
+    font-size: 39px;
+  }
+  .modal-content {
+    width: 70%;
+  }
+}
+@media (min-width: 994px) and (max-width: 1200px) {
+  .modal {
+    padding-top: 40px;
+  }
+  .modal-content {
+    width: 70%;
+  }
+}

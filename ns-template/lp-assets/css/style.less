@@ -1,0 +1,3071 @@
+/*============    RESET    ===========*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background: #ffffff;
+  .apercuProMono;
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+a:hover,
+a:link,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+@import "global";
+
+.h1 {
+
+}
+
+.h2 {
+  padding-bottom: 20px;
+  .sofiaProB;
+  font-size: 57px;
+  .darkBlue;
+  line-height: 1.2em;
+  text-transform: uppercase;
+  span {
+    display: block;
+  }
+
+}
+
+.h3 {
+  .sofiaProB;
+  font-size: 50px;
+  .darkBlue;
+  line-height: 1.2em;
+}
+
+.h4 {
+
+}
+
+.h5 {
+  .sofiaProB;
+  font-size: 29px;
+  .darkBlue;
+  line-height: 1.4em;
+  text-transform: uppercase;
+
+}
+
+.price {
+  .sofiaProB;
+  font-size: 42px;
+  .darkBlue;
+  line-height: 1.2em;
+  margin-bottom: 12px;
+  padding-left: 70px;
+}
+
+.noPadding {
+  padding: 0;
+}
+
+/*More read*/
+.morecontent span {
+  display: none;
+}
+
+.morelink {
+  display: block;
+  &:link,
+  &:focus,
+  &:visited,
+  &:active {
+    color: #f19495;
+    border: none;
+    outline: none;
+  }
+
+  .sofiaProB;
+  font-size: 17px;
+  line-height: 1.4em;
+  transition: 0.3s;
+  &:hover {
+    color: #F13B98;
+    transition: 0.3s;
+    border: none;
+
+  }
+}
+
+.transformational .more {
+  .grey;
+  font-size: 13px;
+  .apercuProMono;
+  line-height: 1.8em;
+}
+
+/*More read end*/
+
+#mce-success-response {
+  display: none !important;
+}
+
+// placeholders start
+.placeHolderEffect::-webkit-input-placeholder, .inputEmailPlane::-webkit-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.6s ease;
+}
+
+.placeHolderEffect::-moz-placeholder, .inputEmailPlane::-moz-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.6s ease;
+}
+
+.placeHolderEffect:-moz-placeholder, .inputEmailPlane:-moz-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.6s ease;
+}
+
+.placeHolderEffect:-ms-input-placeholder, .inputEmailPlane:-ms-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.6s ease;
+}
+
+.placeHolderEffect:focus::-webkit-input-placeholder, .inputEmailPlane:focus::-webkit-input-placeholder {
+  text-indent: 700px;
+  transition: text-indent 0.6s ease;
+}
+
+.placeHolderEffect:focus::-moz-placeholder, .inputEmailPlane:focus::-moz-placeholder {
+  text-indent: 700px;
+  transition: text-indent 0.6s ease;
+}
+
+.placeHolderEffect:focus:-moz-placeholder, .inputEmailPlane:focus:-moz-placeholder {
+  text-indent: 700px;
+  transition: text-indent 0.6s ease;
+}
+
+.placeHolderEffect:focus:-ms-input-placeholder, .inputEmailPlane:focus:-ms-input-placeholder {
+  text-indent: 700px;
+  transition: text-indent 0.6s ease;
+}
+
+// placeholders end
+
+p {
+  .grey;
+  font-size: 20px;
+  .apercuProMono;
+  line-height: 2em;
+  span {
+    display: block;
+  }
+
+}
+
+.add {
+  position: absolute;
+  //background: url(../img/button.png) no-repeat center center;
+  background-size: cover;
+  height: 75px;
+  width: 380px;
+  left: 0;
+  right: 0;
+  bottom: -50px;
+  margin: 0 auto;
+  .whiteT;
+  text-transform: uppercase;
+  .sofiaProB;
+  font-size: 19px;
+  text-align: center;
+}
+
+.accordBtn {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  height: 55px;
+  border: none;
+  display: block;
+  text-align: center;
+
+  &:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    border: 2px solid black;
+    display: block;
+    top: -4px;
+    left: -4px;
+    .lightGreen;
+
+    box-sizing: border-box;
+    transition: 0.3s;
+  }
+  &:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    border: 2px solid black;
+    display: block;
+    top: 0px;
+    left: 0px;
+
+    box-sizing: border-box;
+    transition: 0.3s;
+    .bgWhite;
+  }
+  span {
+    top: -8px;
+    left: -8px;
+    letter-spacing: 1px;
+
+    width: 100%;
+    height: 100%;
+    .whiteT;
+    text-transform: uppercase;
+    .sofiaProB;
+    font-size: 19px;
+    border: 2px solid black;
+    display: block;
+    z-index: 1;
+    box-sizing: border-box;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    .purpleBg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  &:hover {
+    &:before {
+      top: 0;
+      left: 0;
+    }
+    span {
+      top: 0;
+      left: 0;
+    }
+  }
+
+}
+
+.userMobile {
+  display: none;
+}
+
+.mobileDesk {
+  display: none;
+}
+
+.bannerTextMobile {
+  display: none;
+
+  span {
+    .sofiaProB;
+    display: inline-block;
+  }
+}
+
+/*Header start*/
+.headerFluid {
+  padding-top: 70px;
+  background: url("../img/nerdchella/coachellaBg.png") no-repeat center top;
+  background-size: cover;
+  .headerContainer {
+    text-align: center;
+
+    .shopWrap {
+      .bgWhite;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: -50px;
+      -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.22);
+    }
+    .shopT {
+      width: 50%;
+      position: relative;
+      .bgWhite;
+      padding: 45px 30px 30px 29px;
+      display: flex;
+      flex-direction: column;
+
+    }
+    .coachellaMobile {
+      display: none;
+    }
+
+    .shopImg {
+      width: 50%;
+
+      iframe {
+        display: block;
+        max-width: 100%;
+        margin-left: auto;
+
+      }
+    }
+    .h2 {
+      padding-bottom: 0;
+      margin-top: 0;
+      //font-size: 32px;
+      line-height: 1.4em;
+      font-size: 45px;
+    }
+    .win {
+      font-size: 114px;
+      line-height: 1;
+    }
+    .h5 {
+      .apercuProMono;
+      span {
+        display: block;
+      }
+      margin-bottom: 5px;
+      font-size: 26px;
+      margin-top: 40px;
+
+      text-transform: none;
+      span {
+        .sofiaProB;
+      }
+    }
+
+    .middleDesc {
+      margin-bottom: 0px;
+    }
+
+    .add {
+      bottom: -110px;
+    }
+    .accordBtn {
+      height: 65px;
+      span {
+        font-size: 28px;
+      }
+    }
+
+  }
+}
+
+/*Header End*/
+
+/*Main  Start*/
+.featuredFluid {
+  padding-top: 110px;
+  padding-bottom: 30px;
+
+  .h5 {
+    color: #c2c2c2;
+    margin-bottom: 30px;
+  }
+  .featuredContainer {
+    padding: 20px;
+    border-bottom: 2px solid #ffebe6;
+    border-top: 2px solid #ffebe6;
+    .slick-track {
+      display: flex;
+      align-items: center;
+
+    }
+    .partner {
+      width: auto;
+      img {
+        //width: 150px;
+        display: block;
+        margin: 0 auto;
+        height: 30px;
+      }
+      svg {
+
+      }
+      a {
+        outline: none;
+      }
+    }
+  }
+}
+
+.getSelfieFluid {
+  padding-bottom: 45px;
+  padding-top: 80px;
+  .getSelfieContainer {
+    text-align: center;
+    .accordBtn {
+      margin: 50px auto 0 auto;
+      height: 65px;
+      span {
+        font-size: 28px;
+
+      }
+    }
+    .form {
+      margin-top: 20px;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+      .input {
+        background: #f8f8f8;
+        border: none;
+        text-align: center;
+        color: #1c2026;
+        height: 75px;
+        font-size: 25px;
+        margin-bottom: 20px;
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        //   focus
+        &:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          text-indent: 1300px;
+        }
+        &:focus::-moz-placeholder { /* Firefox 19+ */
+          text-indent: 1300px;
+
+        }
+        &:focus:-ms-input-placeholder { /* IE 10+ */
+          text-indent: 1300px;
+
+        }
+        &:focus:-moz-placeholder { /* Firefox 18- */
+          text-indent: 1300px;
+
+        }
+
+      }
+      ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: #1c2026;
+        font-size: 25px;
+        text-indent: 0px;
+        transition: text-indent 1s ease;
+      }
+      ::-moz-placeholder { /* Firefox 19+ */
+        color: #1c2026;
+        font-size: 25px;
+        text-indent: 0px;
+        transition: text-indent 1s ease;
+
+      }
+      :-ms-input-placeholder { /* IE 10+ */
+        color: #1c2026;
+        font-size: 25px;
+        text-indent: 0px;
+        transition: text-indent 1s ease;
+
+      }
+      :-moz-placeholder { /* Firefox 18- */
+        color: #1c2026;
+        font-size: 25px;
+        text-indent: 0px;
+        transition: text-indent 1s ease;
+      }
+
+    }
+
+    .h2 {
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url(../img/nerdchella/salut.png) no-repeat center center;
+        -webkit-background-size: contain;
+        background-size: contain;
+        left: 0;
+        right: 0;
+        top: -90px;
+
+      }
+    }
+    .h5 {
+
+      .apercuProMono;
+      text-transform: none;
+      position: relative;
+
+    }
+    img {
+      width: 100px;
+      height: auto;
+    }
+    .selfiewRow {
+      margin-top: 40px;
+      display: flex;
+      justify-content: space-between;
+
+    }
+    .title {
+      text-transform: uppercase;
+      font-size: 33px;
+    }
+    .selfieItem {
+
+      padding-top: 25px;
+      padding-bottom: 25px;
+      width: 32%;
+      position: relative;
+      &:after {
+        content: '';
+        background: #eafafc;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 75%;
+        margin: auto;
+        z-index: -1;
+
+      }
+    }
+    .desc {
+      font-size: 25px;
+      line-height: 1.8em;
+    }
+
+  }
+}
+
+.whyNerdFluid {
+  background: #eafafc;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  text-align: center;
+  .whyNerdContainer {
+    .whyNerdWrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+    }
+    .nerdItem {
+      width: 32%;
+      margin-top: 30px;
+      img {
+        margin: 0 auto 15px auto;
+        display: block;
+      }
+      p {
+        width: 70%;
+        margin: 0 auto;
+      }
+
+    }
+
+  }
+}
+
+.acneFluid {
+  padding-bottom: 65px;
+  padding-top: 40px;
+  .acneContainer {
+
+    .h2 {
+      span {
+        display: inline-block;
+        padding: 10px 20px 10px 6px;
+
+      }
+    }
+    .acneWrap {
+      display: flex;
+      justify-content: center;
+
+    }
+    .h3 {
+      padding-top: 60px;
+    }
+
+    .acneInner {
+      width: 45%;
+      position: relative;
+      padding-left: 30px;
+      padding-right: 10px;
+      padding-bottom: 70px;
+      display: flex;
+      justify-content: center;
+
+      .acneInnerImgCC {
+        margin-top: 44px;
+        max-width: 166px;
+        width: 100%;
+
+      }
+
+      .acneInnerImgCream {
+        align-self: center;
+        max-width: 345px;
+        width: 100%;
+        img {
+          margin-top: 285px;
+        }
+
+      }
+      .acneInnerImg {
+        margin-right: 30px;
+      }
+      .acneInnerImgAT {
+        margin-top: 19px;
+        max-width: 218px;
+        width: 48%;
+        margin-right: 0;
+
+      }
+
+      .acneInnerImgExtractor {
+        width: 50%;
+        position: absolute;
+        bottom: 72px;
+        right: 0;
+      }
+
+    }
+
+    .acneInnerCC, .acneInnerAT {
+      padding-bottom: 40px;
+    }
+
+    .acneInnerTreatment {
+      p {
+        width: 70%;
+        span {
+          display: block;
+        }
+      }
+    }
+
+    .acneWrap2 {
+      padding-top: 100px;
+    }
+    .acneRight {
+      background: url(../img/pinkBg.png) no-repeat center center;
+      background-size: 90% 65%;
+      .acneInnerDesc {
+        width: 52%;
+      }
+
+    }
+    .acneLeft {
+      background: url(../img/creamBg.png) no-repeat left 20px center;
+      background-size: 65% 50%;
+    }
+    .extractor {
+    }
+  }
+}
+
+.acneTreatmentSystemFluid {
+  margin-top: 10px;
+  background: #ffebe6 url("../img/test1.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  min-height: 389px;
+  height: 100%;
+  margin-bottom: 70px;
+  .acneTreatmentSystemContainer {
+    padding: 0 30px 50px 30px;
+    .price {
+      text-align: left;
+    }
+    .h3 {
+      padding-top: 50px;
+    }
+    .systemWrap {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      .systemInnerDesc {
+        width: 35%;
+      }
+      .systemInnerImg {
+        width: 60%;
+        .systemInnerImgGroup {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-around;
+          margin-top: -20px;
+          img {
+            width: 80%;
+          }
+        }
+
+      }
+      .add {
+        bottom: -103px;
+      }
+
+    }
+    .anceLastWrap {
+      margin-bottom: -26px;
+    }
+    .acneCCWrap {
+      margin-left: -50px;
+    }
+  }
+}
+
+.ytp-expand-pause-overlay .ytp-pause-overlay {
+  display: none;
+}
+
+.commentsFluid {
+  .commentsContainer {
+    .h5 {
+      margin-bottom: 5px;
+    }
+    .bgWhite;
+    .slick-prev {
+      left: -25px;
+      [dir="rtl"] & {
+        left: auto;
+        right: -25px;
+      }
+      &:before {
+        content: "\f053";
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 33px;
+        .blackT;
+        [dir="rtl"] & {
+          font: normal normal normal 14px/1 FontAwesome;
+          content: "\f053";
+          font-size: 25px;
+        }
+      }
+    }
+
+    .stars {
+      margin-bottom: 15px;
+      img {
+        height: 26px;
+      }
+    }
+    .slick-next {
+      right: -25px;
+      [dir="rtl"] & {
+        left: -25px;
+        right: auto;
+      }
+      &:before {
+        font: normal normal normal 14px/1 FontAwesome;
+        content: "\f054";
+        font-size: 33px;
+        .blackT;
+        [dir="rtl"] & {
+          font: normal normal normal 14px/1 FontAwesome;
+          content: "\f054";
+          font-size: 25px;
+          .blackT;
+        }
+      }
+    }
+
+    .slider {
+      width: 90%;
+      margin: 28px auto 28px auto;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: #000000;
+    }
+    .comments {
+      //border: 3px solid #e6e6e6;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      p {
+        .apercuProMono;
+        font-size: 13px;
+        line-height: 1.8em;
+        margin-bottom: 6px;
+
+      }
+      .resultsDesc {
+        margin-top: 15px;
+        padding-right: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .resultsDescInner {
+        display: inline-block;
+        .sofiaProR;
+        font-size: 16px;
+      }
+      .resultHr {
+        display: inline-block;
+        width: 50%;
+      }
+      .hr {
+        width: 40px;
+        height: 8px;
+        background: #292a30;
+        padding-right: 6px;
+        border-radius: 2px;
+      }
+
+      .title {
+        .sofiaProB;
+        font-size: 15px;
+        line-height: 1.4em;
+        margin-bottom: 0px;
+
+      }
+      .verified {
+        padding-bottom: 10px;
+        padding-top: 5px;
+      }
+      .dashedLeft {
+        //border-left: 2px dashed #c2c2c2;
+        //padding-left: 5px;
+      }
+      .imageWrap {
+        width: 15%;
+        img {
+          border-radius: 50%;
+          height: 120px;
+          width: 120px;
+        }
+      }
+      .descUserWrap {
+        width: 83%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .descUser {
+        width: 30%;
+      }
+      .transformational {
+        width: 65%;
+
+        .resultsWrap {
+          margin-top: 25px;
+        }
+        .results {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+.videoYouTubeFluid {
+  .videoYouTube {
+    img {
+      width: 100%;
+    }
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.earnRewardsFluid {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  .earnRewardsContainer {
+    .bgWhite;
+    .earnRewardsWrap {
+      display: flex;
+      justify-content: space-between;
+      padding: 60px;
+      -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.22);
+
+      .earnRewardsInner {
+        position: relative;
+        width: 45%;
+        .add {
+          margin-bottom: -59px;
+        }
+        .emailWrap {
+          .name, .email {
+            margin-top: 5px !important;
+            padding-top: 7px !important;
+            padding-bottom: 7px !important;
+            width: 100% !important;
+            border: none !important;
+            font-size: 18px !important;
+            .sofiaProR !important;
+            .darkBlue !important;
+            line-height: 1.4em !important;
+            border-bottom: 2px solid #1c2026 !important;
+            -webkit-border-radius: 0px !important;
+            -moz-border-radius: 0px !important;
+            border-radius: 0px !important;
+            text-indent: 0% !important;
+            &:after {
+              content: '<svg xmlns="http://www.w3.org/2000/svg" width="38" height="5.5" viewBox="0 0 76 11"> <path fill-rule="evenodd" d="M73.718 6.982l-3.242 3.346a1.425 1.425 0 0 1-2.057 0 1.537 1.537 0 0 1 0-2.121L69.589 7H1.909a1.5 1.5 0 0 1 0-3h67.682l-1.172-1.208a1.536 1.536 0 0 1 0-2.12 1.422 1.422 0 0 1 2.057 0l3.243 3.346c.742.09 1.32.715 1.32 1.482s-.578 1.392-1.321 1.482z"></path> </svg>'
+            }
+          }
+          ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            .sofiaProR;
+            .darkBlue;
+            line-height: 1.4em;
+          }
+          ::-moz-placeholder { /* Firefox 19+ */
+            .sofiaProR;
+            .darkBlue;
+            line-height: 1.4em;
+          }
+          :-ms-input-placeholder { /* IE 10+ */
+            .sofiaProR;
+            .darkBlue;
+            line-height: 1.4em;
+          }
+          :-moz-placeholder { /* Firefox 18- */
+            .sofiaProR;
+            .darkBlue;
+            line-height: 1.4em;
+          }
+        }
+      }
+
+      // mailchip forms start
+      .accordBtn {
+        width: 100% !important;
+        max-width: 380px;
+      }
+
+      #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+        padding: 15px 0 0 0 !important;
+        .apercuProMono;
+        margin-bottom: 0 !important;
+      }
+
+      // mailchip forms end
+
+      .shopImg {
+        width: 42%;
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.descFluid {
+  padding-bottom: 70px;
+  .descContainer {
+    ul {
+
+      li {
+        text-align: left;
+        margin-top: 15px;
+        font-size: 25px;
+        line-height: 1.9em;
+      }
+    }
+  }
+}
+
+/*Main  End*/
+
+/*Footer Start*/
+footer {
+  .footerFluid {
+    border-top: 2px solid #1c2026;
+    .footerContainer {
+      .footerWrap {
+        display: flex;
+        justify-content: space-between;
+        .footerInner {
+          padding: 50px;
+          width: 50%;
+          .h5 {
+            font-size: 30px;
+            text-transform: none;
+            line-height: 1.2em;
+          }
+          p {
+            font-size: 15px;
+            .apercuProMono;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*Footer End*/
+
+/* Media queries*/
+
+@media (min-width: 0px) and (max-width: 320px){
+  .mobileDesk {
+    display: block;
+  }
+
+  .userMobile {
+    display: block;
+  }
+
+  .user {
+    display: none;
+  }
+
+  .accordBtn {
+    height: 45px;
+    span {
+      font-size: 17px;
+    }
+  }
+
+  .h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+  }
+
+  .h3 {
+    font-size: 25px;
+  }
+
+  .h5 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.4em;
+  }
+
+  .add {
+    width: 200px;
+    height: 60px;
+    bottom: -37px;
+    left: 8.5px;
+
+  }
+
+  .mainTitle {
+    margin-top: 20px;
+    padding-bottom: 0;
+  }
+
+  .bannerTextMobile {
+    display: block;
+    .sofiaProM;
+    background: #edf8f9;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 27px;
+    margin-bottom: 0;
+    margin-top: 20px;
+
+  }
+
+  .headerFluid {
+    padding-top: 30px;
+    .headerContainer {
+      .coachellaMobile {
+        display: block;
+      }
+      .coachellaDesk {
+        display: none;
+      }
+      .h2 {
+        font-size: 20px;
+        span {
+          display: inline-block;
+        }
+      }
+      .shopWrap {
+        flex-direction: column;
+
+      }
+      .shopT {
+        text-align: center;
+        order: 2;
+        width: 100%;
+        padding: 15px 25px 36px 25px;
+      }
+      .shopImg {
+        order: 1;
+        width: 100%;
+        img {
+          margin: 0 auto;
+        }
+      }
+      .add {
+        width: 83%;
+        bottom: -43px;
+      }
+      .h5 {
+        margin-top: 10px;
+        line-height: 1;
+        font-size: 21px;
+
+      }
+      .middleDesc {
+        margin-top: 10px;
+      }
+      .accordBtn {
+        height: 55px;
+        span {
+          font-size: 19px;
+        }
+
+      }
+
+      .win {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .featuredFluid {
+    padding-bottom: 0px;
+    .h5 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .getSelfieFluid {
+    .getSelfieContainer {
+      .form {
+        .input{
+          width: 100%;
+        }
+      }
+
+      .selfiewRow {
+        margin-top: 40px;
+        flex-direction: column;
+      }
+      .selfieItem {
+        padding-top: 5px;
+        padding-bottom: 15px;
+        width: 100%;
+        margin-bottom: 10px;
+        &:after {
+          width: 100%;
+        }
+      }
+      .title {
+        margin-top: 0;
+        font-size: 25px;
+      }
+      .desc {
+        font-size: 14px;
+      }
+      .form {
+        .input{
+          height: 55px;
+          margin-bottom: 13px;
+          font-size: 19px;
+        }
+
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          font-size:19px;
+        }
+        ::-moz-placeholder { /* Firefox 19+ */
+          font-size:19px;
+
+
+        }
+        :-ms-input-placeholder { /* IE 10+ */
+          font-size:19px;
+
+        }
+        :-moz-placeholder { /* Firefox 18- */
+          font-size:19px;
+
+        }
+      }
+
+      .accordBtn{
+        height: 55px;
+        margin-top: 10px;
+        span{
+          font-size: 19px;
+        }
+      }
+    }
+
+
+
+  }
+
+  .whyNerdFluid{
+    padding-bottom: 30px;
+    .whyNerdContainer {
+      .h2{
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+      .nerdItem{
+        width: 100%;
+      }
+    }
+  }
+
+  .getSelfieFluid {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    .getSelfieContainer {
+      .h2 {
+        &:before {
+          top: -50px;
+          height: 50%;
+        }
+      }
+      img {
+        width: 80px;
+      }
+      ul {
+        margin-top: 0;
+        li {
+          margin-top: 15px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .acneFluid {
+    padding-top: 8px;
+    padding-bottom: 0px;
+    .acneContainer {
+
+      .h2 {
+        padding-bottom: 10px;
+      }
+      .h3 {
+        padding-top: 20px;
+        margin-top: 0;
+        margin-bottom: 8px;
+      }
+      .acneWrap {
+        flex-direction: column;
+        justify-content: center;
+        .acneInner {
+          flex-direction: column;
+          margin: 0 auto;
+          width: 100%;
+          text-align: center;
+          padding-right: 0;
+          padding-left: 0;
+          margin-bottom: 50px;
+          padding-bottom: 30px;
+          p {
+            padding-bottom: 20px;
+          }
+          .price {
+            padding-left: 0;
+            font-size: 25px;
+            padding-bottom: 0;
+          }
+
+          .acneInnerDesc {
+            width: 100%;
+            order: 2;
+          }
+          .acneInnerImg {
+            order: 1;
+            margin: 17px auto 0 auto;
+            img {
+              width: 60%;
+              margin: 0 auto;
+
+            }
+          }
+
+          .acneInnerImgCC {
+            img {
+              width: auto;
+              height: 200px;
+            }
+          }
+          .acneInnerImgCream {
+            img {
+              height: 100px;
+              width: auto;
+            }
+
+          }
+
+          .acneInnerImgAT {
+            img {
+              width: auto;
+              //height: 200px;
+              margin-right: auto;
+              padding-left: 33px;
+            }
+          }
+
+          .acneInnerImgExtractor {
+            margin: 20px auto 0 auto;
+
+          }
+          .acneInnerImgExtractor{
+            position: static;
+          }
+
+        }
+        .acneInnerAT, .acneLeftCream {
+          .bgWhite;
+        }
+        .acneInnerTreatment{
+          p{
+            width: 100%;
+          }
+          .acneInnerImg {
+            img{
+              width: 100%;
+            }
+          }
+        }
+
+      }
+      .acneWrap2 {
+        padding-top: 0px;
+      }
+      .acneLeft{
+        background: #edf8f9;
+      }
+    }
+
+  }
+
+  .acneTreatmentSystemFluid {
+    min-height: 350px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    position: relative;
+    .acneTreatmentSystemContainer {
+      width: auto;
+
+      text-align: center;
+      padding: 0;
+      .h3 {
+        margin-top: 10px;
+        margin-bottom: 8px;
+        padding-top: 15px;
+
+      }
+      .systemWrap {
+        flex-direction: column;
+        position: static;
+        .systemInnerDesc {
+          width: 100%;
+          order: 2;
+          p {
+            padding-bottom: 20px;
+          }
+          .price {
+            padding-left: 0;
+            font-size: 25px;
+            padding-bottom: 0;
+          }
+        }
+        .systemInnerImg {
+          width: 100%;
+          order: 1;
+          .systemInnerImgGroup {
+            margin-left: 25px;
+          }
+        }
+        .add {
+          bottom: -40px;
+        }
+        .anceLastWrap {
+          margin-bottom: -10px;
+          margin-left: 20px;
+        }
+        .acneCCWrap {
+          margin-left: 0;
+        }
+
+      }
+      .price {
+        text-align: center;
+
+      }
+    }
+  }
+
+  .commentsFluid {
+    padding-top: 0;
+    padding-bottom: 0;
+    .commentsContainer {
+      .slider {
+        margin-top: 0;
+      }
+
+      .comments {
+        width: 100%;
+        flex-direction: column;
+        padding: 5px;
+        .starsWrap {
+          padding-top: 20px;
+        }
+
+        .stars {
+          img {
+            margin: 0 auto;
+          }
+        }
+        .imageWrap {
+          width: 100%;
+          img {
+            margin: 0 auto 20px auto;
+          }
+        }
+
+        .descUserWrap {
+          width: 100%;
+          flex-direction: column;
+          text-align: center;
+
+          .descUser, .transformational {
+            width: 100%;
+          }
+          .transformational {
+            .resultsWrap {
+
+            }
+            .resultsDescInner {
+              font-size: 14px;
+
+            }
+          }
+        }
+        .resultsDesc {
+          margin-top: 10px;
+          padding-right: 0;
+          flex-direction: column;
+        }
+        .resultsDescInner {
+          margin-right: 0;
+        }
+        .resultHr {
+          width: 100%;
+        }
+        .hr {
+          width: 33px;
+        }
+      }
+    }
+  }
+
+  .earnRewardsFluid {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .earnRewardsContainer {
+      .earnRewardsWrap {
+        padding: 0;
+        padding-top: 30px;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+        .earnRewardsInner {
+          padding-left: 10px;
+          padding-right: 10px;
+
+          padding-bottom: 30px;
+
+          width: 100%;
+          order: 2;
+          .add {
+            margin-bottom: -15px;
+            width: 200px;
+            left: -12px;
+          }
+        }
+        .shopImg {
+          width: 100%;
+          order: 1;
+          img {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+  .descFluid {
+    padding-top: 0;
+    padding-bottom: 35px;
+    .descContainer {
+      ul {
+        li{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  footer .footerFluid {
+    padding-top: 7px;
+    padding-bottom: 20px;
+    .footerContainer {
+      .footerWrap {
+        flex-direction: column;
+        .footerInner {
+          text-align: center;
+          padding: 10px 20px;
+          width: 100%;
+          .h5 {
+            font-size: 22px;
+            margin-bottom: 12px;
+          }
+          p {
+            line-height: 1.5em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  .mobileDesk {
+    display: block;
+  }
+
+  .userMobile {
+    display: block;
+  }
+
+  .user {
+    display: none;
+  }
+
+  .accordBtn {
+    height: 45px;
+    span {
+      font-size: 17px;
+    }
+  }
+
+  .h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+  }
+
+  .h3 {
+    font-size: 25px;
+  }
+
+  .h5 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.4em;
+  }
+
+  .add {
+    width: 200px;
+    height: 60px;
+    bottom: -37px;
+    left: 8.5px;
+
+  }
+
+  .mainTitle {
+    margin-top: 20px;
+    padding-bottom: 0;
+  }
+
+  .bannerTextMobile {
+    display: block;
+    .sofiaProM;
+    background: #edf8f9;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 27px;
+    margin-bottom: 0;
+    margin-top: 20px;
+
+  }
+
+  .headerFluid {
+    padding-top: 30px;
+    .headerContainer {
+      .coachellaMobile {
+        display: block;
+      }
+      .coachellaDesk {
+        display: none;
+      }
+      .h2 {
+        font-size: 20px;
+        span {
+          display: inline-block;
+        }
+      }
+      .shopWrap {
+        flex-direction: column;
+
+      }
+      .shopT {
+        text-align: center;
+        order: 2;
+        width: 100%;
+        padding: 15px 25px 36px 25px;
+      }
+      .shopImg {
+        order: 1;
+        width: 100%;
+        img {
+          margin: 0 auto;
+        }
+      }
+      .add {
+        width: 83%;
+        bottom: -43px;
+      }
+      .h5 {
+        margin-top: 10px;
+        line-height: 1;
+        font-size: 21px;
+
+      }
+      .middleDesc {
+        margin-top: 10px;
+      }
+      .accordBtn {
+        height: 55px;
+        span {
+          font-size: 19px;
+        }
+
+      }
+
+      .win {
+        font-size: 40px;
+      }
+    }
+  }
+
+  .featuredFluid {
+    padding-bottom: 0px;
+    .h5 {
+      margin-bottom: 20px;
+    }
+  }
+
+  .getSelfieFluid {
+    .getSelfieContainer {
+      .form {
+        .input{
+          width: 100%;
+        }
+      }
+
+      .selfiewRow {
+        margin-top: 40px;
+        flex-direction: column;
+      }
+      .selfieItem {
+        padding-top: 5px;
+        padding-bottom: 15px;
+        width: 100%;
+        margin-bottom: 10px;
+        &:after {
+          width: 100%;
+        }
+      }
+      .title {
+        margin-top: 0;
+        font-size: 25px;
+      }
+      .desc {
+        font-size: 14px;
+      }
+      .form {
+        .input{
+          height: 55px;
+          margin-bottom: 13px;
+          font-size: 19px;
+        }
+
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          font-size:19px;
+        }
+        ::-moz-placeholder { /* Firefox 19+ */
+          font-size:19px;
+
+
+        }
+        :-ms-input-placeholder { /* IE 10+ */
+          font-size:19px;
+
+        }
+        :-moz-placeholder { /* Firefox 18- */
+          font-size:19px;
+
+        }
+      }
+
+      .accordBtn{
+        height: 55px;
+        margin-top: 10px;
+        span{
+          font-size: 19px;
+        }
+      }
+    }
+
+
+
+  }
+
+  .whyNerdFluid{
+    padding-bottom: 30px;
+    .whyNerdContainer {
+      .h2{
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+      .nerdItem{
+        width: 100%;
+      }
+    }
+  }
+
+  .getSelfieFluid {
+    padding-top: 60px;
+    padding-bottom: 40px;
+    .getSelfieContainer {
+      .h2 {
+        &:before {
+          top: -50px;
+          height: 50%;
+        }
+      }
+      img {
+        width: 80px;
+      }
+      ul {
+        margin-top: 0;
+        li {
+          margin-top: 15px;
+          font-size: 14px;
+        }
+      }
+      .accordBtn{
+        max-width: 300px;
+      }
+    }
+  }
+
+  .acneFluid {
+    padding-top: 8px;
+    padding-bottom: 0px;
+    .acneContainer {
+
+      .h2 {
+        padding-bottom: 10px;
+      }
+      .h3 {
+        padding-top: 20px;
+        margin-top: 0;
+        margin-bottom: 8px;
+      }
+      .acneWrap {
+        flex-direction: column;
+        justify-content: center;
+        .acneInner {
+          flex-direction: column;
+          margin: 0 auto;
+          width: 100%;
+          text-align: center;
+          padding-right: 0;
+          padding-left: 0;
+          margin-bottom: 50px;
+          padding-bottom: 30px;
+          p {
+            padding-bottom: 20px;
+          }
+          .price {
+            padding-left: 0;
+            font-size: 25px;
+            padding-bottom: 0;
+          }
+
+          .acneInnerDesc {
+            width: 100%;
+            order: 2;
+          }
+          .acneInnerImg {
+            order: 1;
+            margin: 17px auto 0 auto;
+            img {
+              width: 60%;
+              margin: 0 auto;
+
+            }
+          }
+
+          .acneInnerImgCC {
+            img {
+              width: auto;
+              height: 200px;
+            }
+          }
+          .acneInnerImgCream {
+            img {
+              height: 100px;
+              width: auto;
+            }
+
+          }
+
+          .acneInnerImgAT {
+            img {
+              width: auto;
+              //height: 200px;
+              margin-right: auto;
+              padding-left: 33px;
+            }
+          }
+
+          .acneInnerImgExtractor {
+            margin: 20px auto 0 auto;
+
+          }
+       .acneInnerImgExtractor{
+         position: static;
+       }
+
+        }
+        .acneInnerAT, .acneLeftCream {
+          .bgWhite;
+        }
+    .acneInnerTreatment{
+      p{
+        width: 100%;
+      }
+      .acneInnerImg {
+        img{
+          width: 100%;
+        }
+      }
+    }
+
+      }
+      .acneWrap2 {
+        padding-top: 0px;
+      }
+      .acneLeft{
+        background: #edf8f9;
+      }
+    }
+
+  }
+
+  .acneTreatmentSystemFluid {
+    min-height: 350px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    position: relative;
+    .acneTreatmentSystemContainer {
+      width: auto;
+
+      text-align: center;
+      padding: 0;
+      .h3 {
+        margin-top: 10px;
+        margin-bottom: 8px;
+        padding-top: 15px;
+
+      }
+      .systemWrap {
+        flex-direction: column;
+        position: static;
+        .systemInnerDesc {
+          width: 100%;
+          order: 2;
+          p {
+            padding-bottom: 20px;
+          }
+          .price {
+            padding-left: 0;
+            font-size: 25px;
+            padding-bottom: 0;
+          }
+        }
+        .systemInnerImg {
+          width: 100%;
+          order: 1;
+          .systemInnerImgGroup {
+            margin-left: 25px;
+          }
+        }
+        .add {
+          bottom: -40px;
+        }
+        .anceLastWrap {
+          margin-bottom: -10px;
+          margin-left: 20px;
+        }
+        .acneCCWrap {
+          margin-left: 0;
+        }
+
+      }
+      .price {
+        text-align: center;
+
+      }
+    }
+  }
+
+  .commentsFluid {
+    padding-top: 0;
+    padding-bottom: 0;
+    .commentsContainer {
+      .slider {
+        margin-top: 0;
+      }
+
+      .comments {
+        width: 100%;
+        flex-direction: column;
+        padding: 5px;
+        .starsWrap {
+          padding-top: 20px;
+        }
+
+        .stars {
+          img {
+            margin: 0 auto;
+          }
+        }
+        .imageWrap {
+          width: 100%;
+          img {
+            margin: 0 auto 20px auto;
+          }
+        }
+
+        .descUserWrap {
+          width: 100%;
+          flex-direction: column;
+          text-align: center;
+
+          .descUser, .transformational {
+            width: 100%;
+          }
+          .transformational {
+            .resultsWrap {
+
+            }
+            .resultsDescInner {
+              font-size: 14px;
+
+            }
+          }
+        }
+        .resultsDesc {
+          margin-top: 10px;
+          padding-right: 0;
+          flex-direction: column;
+        }
+        .resultsDescInner {
+          margin-right: 0;
+        }
+        .resultHr {
+          width: 100%;
+        }
+        .hr {
+          width: 33px;
+        }
+      }
+    }
+  }
+
+  .earnRewardsFluid {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .earnRewardsContainer {
+      .earnRewardsWrap {
+        padding: 0;
+        padding-top: 30px;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+        .earnRewardsInner {
+          padding-left: 10px;
+          padding-right: 10px;
+
+          padding-bottom: 30px;
+
+          width: 100%;
+          order: 2;
+          .add {
+            margin-bottom: -15px;
+            width: 200px;
+            left: -12px;
+          }
+        }
+        .shopImg {
+          width: 100%;
+          order: 1;
+          img {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+  .descFluid {
+    padding-top: 0;
+    padding-bottom: 35px;
+    .descContainer {
+      ul {
+        li{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  footer .footerFluid {
+    padding-top: 7px;
+    padding-bottom: 20px;
+    .footerContainer {
+      .footerWrap {
+        flex-direction: column;
+        .footerInner {
+          text-align: center;
+          padding: 10px 20px;
+          width: 100%;
+          .h5 {
+            font-size: 22px;
+            margin-bottom: 12px;
+          }
+          p {
+            line-height: 1.5em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .mobileDesk {
+    display: block;
+  }
+
+  .price {
+    padding-left: 0;
+    margin-bottom: -5px;
+    font-size: 35px;
+  }
+
+  .userMobile {
+    display: block;
+  }
+
+
+
+  .h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 37px;
+  }
+
+  .h3 {
+    font-size: 40px;
+  }
+
+  .h5 {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.6em;
+  }
+
+  .add {
+    width: 250px;
+  }
+
+  .bannerTextMobile {
+    display: block;
+    .sofiaProM;
+    background: #edf8f9;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 27px;
+    margin-bottom: 0;
+
+  }
+
+  .headerFluid {
+    padding-top: 30px;
+    .headerContainer {
+      width: 445px;
+
+
+      .coachellaMobile {
+        display: block;
+      }
+      .coachellaDesk {
+        display: none;
+      }
+      .h2 {
+        font-size: 30px;
+        span {
+          display: inline-block;
+        }
+      }
+      .shopWrap {
+        flex-direction: column;
+
+      }
+      .shopT {
+        text-align: center;
+        order: 2;
+        width: 100%;
+        padding: 15px 25px 38px 25px;
+      }
+      .shopImg {
+        order: 1;
+        width: 100%;
+        img {
+          margin: 0 auto;
+        }
+      }
+      .add {
+        bottom: -53px;
+      }
+      .h5 {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        line-height: 1.2em;
+
+      }
+      .middleDesc {
+        margin-top: 10px;
+      }
+      .accordBtn {
+        height: 55px;
+
+        span {
+          font-size: 19px;
+        }
+
+      }
+
+      .win {
+        font-size: 70px;
+      }
+    }
+  }
+
+  .featuredFluid {
+    padding-top: 100px;
+    padding-bottom: 24px;
+  }
+
+  .getSelfieFluid {
+    .getSelfieContainer {
+
+      .form {
+        .input{
+          width: 100%;
+        }
+      }
+
+      .selfiewRow {
+        margin-top: 40px;
+      }
+      .h2 {
+        &:before {
+          top: -70px;
+          height: 65%;
+        }
+      }
+      .selfiewRow {
+        flex-direction: column;
+      }
+      .selfieItem {
+        padding-top: 5px;
+        padding-bottom: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 100%;
+        margin-bottom: 10px;
+        &:after {
+          width: 100%;
+        }
+      }
+      .title {
+        margin-top: 0;
+      }
+      .desc {
+        font-size: 20px;
+      }
+      .nerdItem {
+        p{
+          width: 80%;
+        }
+      }
+
+    }
+
+  }
+
+  .getSelfieFluid {
+    padding-bottom: 40px;
+
+    .getSelfieContainer {
+      ul {
+        margin-top: 0;
+        li {
+          margin-top: 15px;
+          font-size: 20px;
+        }
+      }
+      .accordBtn{
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .acneFluid {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    .acneContainer {
+      .h2 {
+        padding-bottom: 20px;
+      }
+      .h3 {
+        padding-top: 20px;
+        margin-top: 0;
+      }
+      .acneWrap {
+        flex-direction: column;
+        justify-content: center;
+        .acneInner {
+          flex-direction: column;
+          margin: 0 auto;
+          width: 100%;
+          text-align: center;
+          padding-right: 0;
+          padding-left: 0;
+          margin-bottom: 70px;
+          padding-bottom: 30px;
+          p {
+            padding-bottom: 20px;
+          }
+          .acneInnerDesc {
+            width: 100%;
+            order: 2;
+          }
+          .acneInnerImg {
+            order: 1;
+            margin: 20px auto 0 auto;
+            img {
+              width: 60%;
+              margin: 0 auto;
+            }
+          }
+          .acneInnerImgAT {
+            img {
+              width: 100%;
+              margin-right: -28px;
+            }
+          }
+
+          .acneInnerImgExtractor {
+            margin: 20px auto 0 auto;
+
+          }
+        }
+        .acneInnerAT, .acneLeftCream {
+          .bgWhite;
+        }
+        .acneInnerTreatment {
+          p{
+            width: 100%;
+          }
+          .acneInnerImg {
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+        .acneInner {
+          .acneInnerImgExtractor {
+            position: static;
+          }
+        }
+      }
+     .acneLeft{
+       background: #edf8f9;
+     }
+      .acneWrap2 {
+        padding-top: 0px;
+      }
+    }
+  }
+
+  .whyNerdFluid {
+    .whyNerdContainer {
+      width: 100%;
+      .nerdItem {
+        width: 50%;
+      }
+    }
+  }
+
+  .acneTreatmentSystemFluid {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    .acneTreatmentSystemContainer {
+      width: auto;
+      text-align: center;
+      .h3 {
+        padding-top: 20px;
+      }
+      .systemWrap {
+        flex-direction: column;
+        .systemInnerDesc {
+          width: 100%;
+          order: 2;
+          p {
+            padding-bottom: 20px;
+          }
+        }
+        .systemInnerImg {
+          width: 100%;
+          order: 1;
+          .systemInnerImgGroup {
+            margin-left: 50px;
+          }
+        }
+
+      }
+      .anceLastWrap {
+        margin-bottom: -19px;
+      }
+      .price {
+        text-align: center;
+      }
+    }
+  }
+
+  .earnRewardsFluid {
+    .earnRewardsContainer {
+      .earnRewardsWrap {
+
+        .earnRewardsInner {
+          .add {
+
+            margin-bottom: -41px;
+          }
+        }
+      }
+    }
+
+  }
+
+  .commentsFluid {
+    .commentsContainer {
+      .slider {
+        margin-top: 0;
+      }
+      .comments {
+        flex-direction: column;
+
+        .resultHr {
+          width: 100%;
+        }
+
+        .imageWrap, .descUserWrap {
+          width: 100%;
+        }
+
+        .stars {
+          img {
+            margin: 0 auto;
+          }
+        }
+
+        .imageWrap {
+          width: 100%;
+          img {
+            margin: 0 auto 20px auto;
+          }
+        }
+        .descUserWrap {
+          flex-direction: column;
+          width: 100%;
+          .descUser {
+            text-align: center;
+            width: 100%;
+          }
+          .transformational {
+            width: 100%;
+          }
+          .transformational {
+            padding-top: 20px;
+            text-align: center;
+            .resultsDescInner {
+              font-size: 14px;
+            }
+          }
+        }
+        .resultsDesc {
+          margin-top: 20px;
+          flex-direction: column;
+          padding-right: 0;
+        }
+        .resultsDescInner {
+          margin-right: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .earnRewardsFluid {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .earnRewardsContainer {
+      .earnRewardsWrap {
+        padding-top: 30px;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+        .earnRewardsInner {
+          width: 100%;
+          order: 2;
+        }
+        .shopImg {
+          width: 100%;
+          order: 1;
+          img {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+
+  .descFluid {
+    padding-top: 0px;
+    padding-bottom: 30px;
+    .descContainer {
+      width: 100%;
+      ul {
+        li {
+          font-size: 18px;
+
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+
+  footer .footerFluid {
+    padding-bottom: 15px;
+    .footerContainer {
+      width: 100%;
+      .footerWrap {
+        flex-direction: column;
+        .footerInner {
+          padding: 10px 0;
+          width: 100%;
+          .h5 {
+            text-align: center;
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .price {
+    padding-left: 0;
+  }
+
+  .container {
+    //width: 725px;
+  }
+
+  .h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 37px;
+  }
+
+  .h3 {
+    font-size: 40px;
+  }
+
+  .h5 {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.6em;
+  }
+
+  .add {
+    width: 250px;
+  }
+
+  .headerFluid {
+    .headerContainer {
+      .h2 {
+        span {
+          display: inline-block;
+        }
+      }
+      .shopWrap {
+        //flex-direction: column;
+
+      }
+      .shopT {
+        text-align: center;
+        order: 2;
+        //width: 100%;
+        padding: 15px 25px 50px 25px;
+      }
+      .shopImg {
+        order: 1;
+        //width: 100%;
+        iframe {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+      .add {
+        bottom: -53px;
+      }
+      .middleDesc {
+        margin-top: 10px;
+      }
+      .h2 {
+        font-size: 25px;
+      }
+
+      .h5 {
+        font-size: 20px;
+        margin-top: 20px;
+      }
+      .win {
+        font-size: 65px;
+      }
+      .accordBtn {
+        span {
+        }
+      }
+    }
+  }
+
+  .featuredFluid {
+    padding-top: 115px;
+    padding-bottom: 35px;
+    .featuredContainer {
+      width: 730px;
+    }
+  }
+
+  .getSelfieFluid {
+    padding-bottom: 30px;
+    .getSelfieContainer {
+      .desc {
+        font-size: 20px;
+      }
+      .h2 {
+        &:before {
+          height: 65%;
+        }
+
+      }
+
+
+    }
+
+  }
+  .descFluid {
+    .descContainer{
+      ul{
+        li{
+          font-size: 20px;
+        }
+
+      }
+    }
+  }
+
+  .getSelfieFluid {
+    .getSelfieContainer {
+      .h2 {
+        &:before {
+          top: -70px;
+        }
+      }
+      ul {
+        li {
+          font-size: 20px;
+
+        }
+      }
+    }
+  }
+
+  .acneFluid {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    .acneContainer {
+
+      .acneLeft {
+        background: #edf8f9;
+      }
+
+      .h2 {
+        padding-bottom: 20px;
+      }
+      .h3 {
+        padding-top: 20px;
+        margin-top: 0;
+      }
+      .acneWrap {
+        flex-direction: column;
+        justify-content: center;
+        .acneInner {
+          flex-direction: column;
+          margin: 0 auto;
+          width: 100%;
+          text-align: center;
+          padding-right: 0;
+          padding-left: 0;
+          margin-bottom: 70px;
+          padding-bottom: 30px;
+          .acneInnerImgExtractor {
+            position: static;
+
+          }
+
+          p {
+            padding-bottom: 20px;
+          }
+          .acneInnerDesc {
+            width: 100%;
+            order: 2;
+          }
+
+          .acneInnerImg {
+            order: 1;
+            margin: 20px auto 0 auto;
+
+            img {
+              width: 60%;
+              margin: 0 auto;
+            }
+          }
+          .acneInnerImgAT {
+            img {
+              width: 100%;
+              margin-right: -30px;
+            }
+          }
+          .acneInnerImgExtractor {
+            margin: 20px auto 0 auto;
+
+          }
+
+        }
+        .acneInnerAT, .acneLeftCream {
+          .bgWhite;
+        }
+        .acneInnerCC {
+          .acneInnerImg {
+            img {
+              width: 80%;
+            }
+          }
+        }
+
+        .acneInnerTreatment {
+          p {
+            width: 100%;
+          }
+          .acneInnerImg {
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+      }
+
+      .acneWrap2 {
+        padding-top: 0px;
+      }
+
+    }
+  }
+
+  .acneTreatmentSystemFluid {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    .acneTreatmentSystemContainer {
+      text-align: center;
+
+      .h3 {
+        padding-top: 20px;
+      }
+      .systemWrap {
+        flex-direction: column;
+        .systemInnerDesc {
+          width: 100%;
+          order: 2;
+          p {
+            padding-bottom: 20px;
+          }
+        }
+        .systemInnerImg {
+          width: 100%;
+          order: 1;
+          .systemInnerImgGroup {
+            margin-left: 85px;
+          }
+        }
+      }
+      .price {
+        text-align: center;
+      }
+    }
+  }
+
+  .list-inline {
+    margin-left: 0;
+  }
+
+  .earnRewardsFluid {
+    .earnRewardsContainer {
+      .earnRewardsWrap {
+
+        .earnRewardsInner {
+          .add {
+
+            margin-bottom: -41px;
+          }
+        }
+      }
+    }
+
+  }
+
+  .commentsFluid {
+    .commentsContainer {
+      .slider {
+        margin-top: 0;
+      }
+      .comments {
+        .resultHr {
+          width: 100%;
+        }
+        .imageWrap {
+          img {
+            margin-bottom: 20px;
+          }
+        }
+
+        flex-direction: column;
+        .imageWrap, .descUserWrap {
+          width: 100%;
+        }
+
+        .resultsDesc {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        .resultsDescInner {
+          margin-right: 20px;
+          padding-bottom: 0px;
+        }
+
+      }
+    }
+  }
+
+  .earnRewardsFluid {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .earnRewardsContainer {
+      .earnRewardsWrap {
+        padding-top: 30px;
+        .shopImg {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  .descFluid {
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+
+  footer .footerFluid {
+    .footerContainer {
+      .footerWrap {
+        .footerInner {
+          padding: 15px;
+          .h5 {
+            margin-bottom: 15px;
+
+          }
+
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+
+  .h2 {
+    padding-bottom: 20px;
+    font-size: 50px;
+  }
+
+  .h3 {
+    font-size: 40px;
+  }
+
+  .h5 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.8em;
+  }
+
+  .add {
+    width: 330px;
+  }
+
+  .headerFluid {
+    .headerContainer {
+      .shopT {
+        padding-top: 10px;
+        width: 55%;
+      }
+      .shopImg {
+        width: 45%;
+
+      }
+      .add {
+        bottom: -75px;
+      }
+      .middleDesc {
+        margin-top: 10px;
+      }
+      .win {
+        font-size: 90px;
+      }
+      .h5 {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .getSelfieFluid {
+    padding-bottom: 60px;
+    .getSelfieContainer {
+      .h2 {
+        &:before {
+          height: 52%;
+        }
+      }
+    }
+
+  }
+
+  .commentsFluid {
+    .commentsContainer {
+      .comments {
+        .hr {
+          width: 30px;
+        }
+      }
+    }
+  }
+
+  .acneFluid {
+    .acneContainer {
+      .acneInner {
+
+        .acneInnerImgAT {
+          margin-top: 30px;
+        }
+        .acneInnerImgCC {
+          //margin-top: 20px;
+        }
+        .acneInnerImgExtractor {
+          bottom: 106px;
+        }
+        .acneInnerImgCream {
+          img {
+            margin-top: 192px;
+          }
+        }
+
+      }
+
+      .acneInnerTreatment {
+        p {
+          width: 64%;
+        }
+      }
+
+    }
+  }
+
+  .acneTreatmentSystemFluid {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    .acneTreatmentSystemContainer {
+
+      .h3 {
+        padding-top: 0;
+      }
+      .systemWrap {
+        .add {
+          bottom: -103px;
+        }
+      }
+    }
+
+  }
+
+  .earnRewardsFluid {
+    .earnRewardsContainer {
+      .earnRewardsWrap {
+        .shopImg {
+          width: 48%;
+
+        }
+        .earnRewardsInner {
+          .add {
+
+            margin-bottom: -41px;
+          }
+        }
+      }
+    }
+
+  }
+  footer {
+    .footerFluid {
+      .footerContainer {
+        .footerWrap {
+          .footerInner{
+            padding: 25px 20px;
+          }
+        }
+      }
+    }
+  }
+
+}

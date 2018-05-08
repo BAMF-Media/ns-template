@@ -1,0 +1,2664 @@
+/*============    RESET    ===========*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background: #ffffff;
+  font-family: 'ApercuProMono';
+  font-weight: normal;
+  font-style: normal;
+  overflow-x: hidden;
+}
+ol,
+ul {
+  list-style: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+a:hover,
+a:link,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+/*============    FONTS    ===========*/
+@font-face {
+  font-family: 'SofiaProRegular';
+  src: url('../fonts/SofiaProRegular.eot');
+  src: url('../fonts/SofiaProRegular.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProRegular.woff2') format('woff2'), url('../fonts/SofiaProRegular.woff') format('woff'), url('../fonts/SofiaProRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ApercuProMono';
+  src: url('../fonts/ApercuPro-Mono.eot');
+  src: url('../fonts/ApercuPro-Mono.eot?#iefix') format('embedded-opentype'), url('../fonts/ApercuPro-Mono.woff2') format('woff2'), url('../fonts/ApercuPro-Mono.woff') format('woff'), url('../fonts/ApercuPro-Mono.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SofiaProBold';
+  src: url('../fonts/SofiaProBold.eot');
+  src: url('../fonts/SofiaProBold.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProBold.woff2') format('woff2'), url('../fonts/SofiaProBold.woff') format('woff'), url('../fonts/SofiaProBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SofiaProBlack';
+  src: url('../fonts/SofiaProBlack.eot');
+  src: url('../fonts/SofiaProBlack.eot?#iefix') format('embedded-opentype'), url('../fonts/SofiaProBlack.woff2') format('woff2'), url('../fonts/SofiaProBlack.woff') format('woff'), url('../fonts/SofiaProBlack.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Sofia Pro Medium';
+  src: url('../fonts/SofiaPro-Medium.woff2') format('woff2'), url('../fonts/SofiaPro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+/*Variables for fonts*/
+.apercuProMono {
+  font-family: 'ApercuProMono';
+  font-weight: normal;
+  font-style: normal;
+}
+.sofiaProM {
+  font-family: 'Sofia Pro Medium';
+  font-weight: 500;
+  font-style: normal;
+}
+.sofiaProR {
+  font-family: 'SofiaProRegular';
+  font-weight: normal;
+  font-style: normal;
+}
+.sofiaProB {
+  font-family: 'SofiaProBold';
+  font-weight: bold;
+  font-style: normal;
+}
+.sofiaProBlack {
+  font-family: 'SofiaProBlack';
+  font-weight: 900;
+  font-style: normal;
+}
+/*Variables for colors*/
+.whiteT {
+  color: #ffffff;
+}
+.bgWhite {
+  background: #ffffff;
+}
+.blackT {
+  color: #000000;
+}
+.darkBlue {
+  color: #1c2026;
+}
+.bgBlue {
+  background: #edf8f9;
+}
+.bgPink {
+  background: #ffebe6;
+}
+.grey {
+  color: #1c2026;
+}
+.purpleBg {
+  background: #f19495;
+}
+.lightGreen {
+  background: #8efef6;
+}
+.lightGrey {
+  background: #b7b8ba;
+}
+.h2 {
+  padding-bottom: 20px;
+  font-family: 'SofiaProBold';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 57px;
+  color: #1c2026;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+.h2 span {
+  display: block;
+}
+.h3 {
+  font-family: 'SofiaProBold';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 50px;
+  color: #1c2026;
+  line-height: 1.2em;
+}
+.h5 {
+  font-family: 'SofiaProBold';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 29px;
+  color: #1c2026;
+  line-height: 1.4em;
+  text-transform: uppercase;
+}
+.price {
+  font-family: 'SofiaProBold';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 42px;
+  color: #1c2026;
+  line-height: 1.2em;
+  margin-bottom: 12px;
+  padding-left: 70px;
+}
+.noPadding {
+  padding: 0;
+}
+/*More read*/
+.morecontent span {
+  display: none;
+}
+.morelink {
+  display: block;
+  font-family: 'SofiaProBold';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 1.4em;
+  transition: 0.3s;
+}
+.morelink:link,
+.morelink:focus,
+.morelink:visited,
+.morelink:active {
+  color: #f19495;
+  border: none;
+  outline: none;
+}
+.morelink:hover {
+  color: #F13B98;
+  transition: 0.3s;
+  border: none;
+}
+.transformational .more {
+  color: #1c2026;
+  font-size: 13px;
+  font-family: 'ApercuProMono';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.8em;
+}
+/*More read end*/
+#mce-success-response {
+  display: none !important;
+}
+.placeHolderEffect::-webkit-input-placeholder,
+.inputEmailPlane::-webkit-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.6s ease;
+}
+.placeHolderEffect::-moz-placeholder,
+.inputEmailPlane::-moz-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.6s ease;
+}
+.placeHolderEffect:-moz-placeholder,
+.inputEmailPlane:-moz-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.6s ease;
+}
+.placeHolderEffect:-ms-input-placeholder,
+.inputEmailPlane:-ms-input-placeholder {
+  text-indent: 0px;
+  transition: text-indent 0.6s ease;
+}
+.placeHolderEffect:focus::-webkit-input-placeholder,
+.inputEmailPlane:focus::-webkit-input-placeholder {
+  text-indent: 700px;
+  transition: text-indent 0.6s ease;
+}
+.placeHolderEffect:focus::-moz-placeholder,
+.inputEmailPlane:focus::-moz-placeholder {
+  text-indent: 700px;
+  transition: text-indent 0.6s ease;
+}
+.placeHolderEffect:focus:-moz-placeholder,
+.inputEmailPlane:focus:-moz-placeholder {
+  text-indent: 700px;
+  transition: text-indent 0.6s ease;
+}
+.placeHolderEffect:focus:-ms-input-placeholder,
+.inputEmailPlane:focus:-ms-input-placeholder {
+  text-indent: 700px;
+  transition: text-indent 0.6s ease;
+}
+p {
+  color: #1c2026;
+  font-size: 20px;
+  font-family: 'ApercuProMono';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 2em;
+}
+p span {
+  display: block;
+}
+.add {
+  position: absolute;
+  background-size: cover;
+  height: 75px;
+  width: 380px;
+  left: 0;
+  right: 0;
+  bottom: -50px;
+  margin: 0 auto;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'SofiaProBold';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 19px;
+  text-align: center;
+}
+.accordBtn {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  height: 55px;
+  border: none;
+  display: block;
+  text-align: center;
+}
+.accordBtn:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  border: 2px solid black;
+  display: block;
+  top: -4px;
+  left: -4px;
+  background: #8efef6;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+.accordBtn:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+  border: 2px solid black;
+  display: block;
+  top: 0px;
+  left: 0px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  background: #ffffff;
+}
+.accordBtn span {
+  top: -8px;
+  left: -8px;
+  letter-spacing: 1px;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'SofiaProBold';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 19px;
+  border: 2px solid black;
+  display: block;
+  z-index: 1;
+  box-sizing: border-box;
+  position: relative;
+  transition: 0.3s;
+  background: #f19495;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accordBtn:hover:before {
+  top: 0;
+  left: 0;
+}
+.accordBtn:hover span {
+  top: 0;
+  left: 0;
+}
+.userMobile {
+  display: none;
+}
+.mobileDesk {
+  display: none;
+}
+.bannerTextMobile {
+  display: none;
+}
+.bannerTextMobile span {
+  font-family: 'SofiaProBold';
+  font-weight: bold;
+  font-style: normal;
+  display: inline-block;
+}
+/*Header start*/
+.headerFluid {
+  padding-top: 70px;
+  background: url("../img/nerdchella/coachellaBg.png") no-repeat center top;
+  background-size: cover;
+}
+.headerFluid .headerContainer {
+  text-align: center;
+}
+.headerFluid .headerContainer .shopWrap {
+  background: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: -50px;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.22);
+}
+.headerFluid .headerContainer .shopT {
+  width: 50%;
+  position: relative;
+  background: #ffffff;
+  padding: 45px 30px 30px 29px;
+  display: flex;
+  flex-direction: column;
+}
+.headerFluid .headerContainer .coachellaMobile {
+  display: none;
+}
+.headerFluid .headerContainer .shopImg {
+  width: 50%;
+}
+.headerFluid .headerContainer .shopImg iframe {
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+}
+.headerFluid .headerContainer .h2 {
+  padding-bottom: 0;
+  margin-top: 0;
+  line-height: 1.4em;
+  font-size: 45px;
+}
+.headerFluid .headerContainer .win {
+  font-size: 114px;
+  line-height: 1;
+}
+.headerFluid .headerContainer .h5 {
+  font-family: 'ApercuProMono';
+  font-weight: normal;
+  font-style: normal;
+  margin-bottom: 5px;
+  font-size: 26px;
+  margin-top: 40px;
+  text-transform: none;
+}
+.headerFluid .headerContainer .h5 span {
+  display: block;
+}
+.headerFluid .headerContainer .h5 span {
+  font-family: 'SofiaProBold';
+  font-weight: bold;
+  font-style: normal;
+}
+.headerFluid .headerContainer .middleDesc {
+  margin-bottom: 0px;
+}
+.headerFluid .headerContainer .add {
+  bottom: -110px;
+}
+.headerFluid .headerContainer .accordBtn {
+  height: 65px;
+}
+.headerFluid .headerContainer .accordBtn span {
+  font-size: 28px;
+}
+/*Header End*/
+/*Main  Start*/
+.featuredFluid {
+  padding-top: 110px;
+  padding-bottom: 30px;
+}
+.featuredFluid .h5 {
+  color: #c2c2c2;
+  margin-bottom: 30px;
+}
+.featuredFluid .featuredContainer {
+  padding: 20px;
+  border-bottom: 2px solid #ffebe6;
+  border-top: 2px solid #ffebe6;
+}
+.featuredFluid .featuredContainer .slick-track {
+  display: flex;
+  align-items: center;
+}
+.featuredFluid .featuredContainer .partner {
+  width: auto;
+}
+.featuredFluid .featuredContainer .partner img {
+  display: block;
+  margin: 0 auto;
+  height: 30px;
+}
+.featuredFluid .featuredContainer .partner a {
+  outline: none;
+}
+.getSelfieFluid {
+  padding-bottom: 45px;
+  padding-top: 80px;
+}
+.getSelfieFluid .getSelfieContainer {
+  text-align: center;
+}
+.getSelfieFluid .getSelfieContainer .accordBtn {
+  margin: 50px auto 0 auto;
+  height: 65px;
+}
+.getSelfieFluid .getSelfieContainer .accordBtn span {
+  font-size: 28px;
+}
+.getSelfieFluid .getSelfieContainer .form {
+  margin-top: 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.getSelfieFluid .getSelfieContainer .form .input {
+  background: #f8f8f8;
+  border: none;
+  text-align: center;
+  color: #1c2026;
+  height: 75px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+.getSelfieFluid .getSelfieContainer .form .input:focus::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  text-indent: 1300px;
+}
+.getSelfieFluid .getSelfieContainer .form .input:focus::-moz-placeholder {
+  /* Firefox 19+ */
+  text-indent: 1300px;
+}
+.getSelfieFluid .getSelfieContainer .form .input:focus:-ms-input-placeholder {
+  /* IE 10+ */
+  text-indent: 1300px;
+}
+.getSelfieFluid .getSelfieContainer .form .input:focus:-moz-placeholder {
+  /* Firefox 18- */
+  text-indent: 1300px;
+}
+.getSelfieFluid .getSelfieContainer .form ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #1c2026;
+  font-size: 25px;
+  text-indent: 0px;
+  transition: text-indent 1s ease;
+}
+.getSelfieFluid .getSelfieContainer .form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #1c2026;
+  font-size: 25px;
+  text-indent: 0px;
+  transition: text-indent 1s ease;
+}
+.getSelfieFluid .getSelfieContainer .form :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #1c2026;
+  font-size: 25px;
+  text-indent: 0px;
+  transition: text-indent 1s ease;
+}
+.getSelfieFluid .getSelfieContainer .form :-moz-placeholder {
+  /* Firefox 18- */
+  color: #1c2026;
+  font-size: 25px;
+  text-indent: 0px;
+  transition: text-indent 1s ease;
+}
+.getSelfieFluid .getSelfieContainer .h2 {
+  position: relative;
+}
+.getSelfieFluid .getSelfieContainer .h2:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url(../img/nerdchella/salut.png) no-repeat center center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  left: 0;
+  right: 0;
+  top: -90px;
+}
+.getSelfieFluid .getSelfieContainer .h5 {
+  font-family: 'ApercuProMono';
+  font-weight: normal;
+  font-style: normal;
+  text-transform: none;
+  position: relative;
+}
+.getSelfieFluid .getSelfieContainer img {
+  width: 100px;
+  height: auto;
+}
+.getSelfieFluid .getSelfieContainer .selfiewRow {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.getSelfieFluid .getSelfieContainer .title {
+  text-transform: uppercase;
+  font-size: 33px;
+}
+.getSelfieFluid .getSelfieContainer .selfieItem {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 32%;
+  position: relative;
+}
+.getSelfieFluid .getSelfieContainer .selfieItem:after {
+  content: '';
+  background: #eafafc;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 75%;
+  margin: auto;
+  z-index: -1;
+}
+.getSelfieFluid .getSelfieContainer .desc {
+  font-size: 25px;
+  line-height: 1.8em;
+}
+.whyNerdFluid {
+  background: #eafafc;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.whyNerdFluid .whyNerdContainer .whyNerdWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.whyNerdFluid .whyNerdContainer .nerdItem {
+  width: 32%;
+  margin-top: 30px;
+}
+.whyNerdFluid .whyNerdContainer .nerdItem img {
+  margin: 0 auto 15px auto;
+  display: block;
+}
+.whyNerdFluid .whyNerdContainer .nerdItem p {
+  width: 70%;
+  margin: 0 auto;
+}
+.acneFluid {
+  padding-bottom: 65px;
+  padding-top: 40px;
+}
+.acneFluid .acneContainer .h2 span {
+  display: inline-block;
+  padding: 10px 20px 10px 6px;
+}
+.acneFluid .acneContainer .acneWrap {
+  display: flex;
+  justify-content: center;
+}
+.acneFluid .acneContainer .h3 {
+  padding-top: 60px;
+}
+.acneFluid .acneContainer .acneInner {
+  width: 45%;
+  position: relative;
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: center;
+}
+.acneFluid .acneContainer .acneInner .acneInnerImgCC {
+  margin-top: 44px;
+  max-width: 166px;
+  width: 100%;
+}
+.acneFluid .acneContainer .acneInner .acneInnerImgCream {
+  align-self: center;
+  max-width: 345px;
+  width: 100%;
+}
+.acneFluid .acneContainer .acneInner .acneInnerImgCream img {
+  margin-top: 285px;
+}
+.acneFluid .acneContainer .acneInner .acneInnerImg {
+  margin-right: 30px;
+}
+.acneFluid .acneContainer .acneInner .acneInnerImgAT {
+  margin-top: 19px;
+  max-width: 218px;
+  width: 48%;
+  margin-right: 0;
+}
+.acneFluid .acneContainer .acneInner .acneInnerImgExtractor {
+  width: 50%;
+  position: absolute;
+  bottom: 72px;
+  right: 0;
+}
+.acneFluid .acneContainer .acneInnerCC,
+.acneFluid .acneContainer .acneInnerAT {
+  padding-bottom: 40px;
+}
+.acneFluid .acneContainer .acneInnerTreatment p {
+  width: 70%;
+}
+.acneFluid .acneContainer .acneInnerTreatment p span {
+  display: block;
+}
+.acneFluid .acneContainer .acneWrap2 {
+  padding-top: 100px;
+}
+.acneFluid .acneContainer .acneRight {
+  background: url(../img/pinkBg.png) no-repeat center center;
+  background-size: 90% 65%;
+}
+.acneFluid .acneContainer .acneRight .acneInnerDesc {
+  width: 52%;
+}
+.acneFluid .acneContainer .acneLeft {
+  background: url(../img/creamBg.png) no-repeat left 20px center;
+  background-size: 65% 50%;
+}
+.acneTreatmentSystemFluid {
+  margin-top: 10px;
+  background: #ffebe6 url("../img/test1.png") no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  min-height: 389px;
+  height: 100%;
+  margin-bottom: 70px;
+}
+.acneTreatmentSystemFluid .acneTreatmentSystemContainer {
+  padding: 0 30px 50px 30px;
+}
+.acneTreatmentSystemFluid .acneTreatmentSystemContainer .price {
+  text-align: left;
+}
+.acneTreatmentSystemFluid .acneTreatmentSystemContainer .h3 {
+  padding-top: 50px;
+}
+.acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .systemInnerDesc {
+  width: 35%;
+}
+.acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .systemInnerImg {
+  width: 60%;
+}
+.acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .systemInnerImg .systemInnerImgGroup {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin-top: -20px;
+}
+.acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .systemInnerImg .systemInnerImgGroup img {
+  width: 80%;
+}
+.acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .add {
+  bottom: -103px;
+}
+.acneTreatmentSystemFluid .acneTreatmentSystemContainer .anceLastWrap {
+  margin-bottom: -26px;
+}
+.acneTreatmentSystemFluid .acneTreatmentSystemContainer .acneCCWrap {
+  margin-left: -50px;
+}
+.ytp-expand-pause-overlay .ytp-pause-overlay {
+  display: none;
+}
+.commentsFluid .commentsContainer {
+  background: #ffffff;
+}
+.commentsFluid .commentsContainer .h5 {
+  margin-bottom: 5px;
+}
+.commentsFluid .commentsContainer .slick-prev {
+  left: -25px;
+}
+[dir="rtl"] .commentsFluid .commentsContainer .slick-prev {
+  left: auto;
+  right: -25px;
+}
+.commentsFluid .commentsContainer .slick-prev:before {
+  content: "\f053";
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 33px;
+  color: #000000;
+}
+[dir="rtl"] .commentsFluid .commentsContainer .slick-prev:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f053";
+  font-size: 25px;
+}
+.commentsFluid .commentsContainer .stars {
+  margin-bottom: 15px;
+}
+.commentsFluid .commentsContainer .stars img {
+  height: 26px;
+}
+.commentsFluid .commentsContainer .slick-next {
+  right: -25px;
+}
+[dir="rtl"] .commentsFluid .commentsContainer .slick-next {
+  left: -25px;
+  right: auto;
+}
+.commentsFluid .commentsContainer .slick-next:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f054";
+  font-size: 33px;
+  color: #000000;
+}
+[dir="rtl"] .commentsFluid .commentsContainer .slick-next:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  content: "\f054";
+  font-size: 25px;
+  color: #000000;
+}
+.commentsFluid .commentsContainer .slider {
+  width: 90%;
+  margin: 28px auto 28px auto;
+}
+.commentsFluid .commentsContainer .slider:hover {
+  cursor: pointer;
+}
+.commentsFluid .commentsContainer .slick-slide {
+  margin: 0px 20px;
+}
+.commentsFluid .commentsContainer .slick-prev:before,
+.commentsFluid .commentsContainer .slick-next:before {
+  color: #000000;
+}
+.commentsFluid .commentsContainer .comments {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.commentsFluid .commentsContainer .comments p {
+  font-family: 'ApercuProMono';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 1.8em;
+  margin-bottom: 6px;
+}
+.commentsFluid .commentsContainer .comments .resultsDesc {
+  margin-top: 15px;
+  padding-right: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.commentsFluid .commentsContainer .comments .resultsDescInner {
+  display: inline-block;
+  font-family: 'SofiaProRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+}
+.commentsFluid .commentsContainer .comments .resultHr {
+  display: inline-block;
+  width: 50%;
+}
+.commentsFluid .commentsContainer .comments .hr {
+  width: 40px;
+  height: 8px;
+  background: #292a30;
+  padding-right: 6px;
+  border-radius: 2px;
+}
+.commentsFluid .commentsContainer .comments .title {
+  font-family: 'SofiaProBold';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.4em;
+  margin-bottom: 0px;
+}
+.commentsFluid .commentsContainer .comments .verified {
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+.commentsFluid .commentsContainer .comments .imageWrap {
+  width: 15%;
+}
+.commentsFluid .commentsContainer .comments .imageWrap img {
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+}
+.commentsFluid .commentsContainer .comments .descUserWrap {
+  width: 83%;
+  display: flex;
+  justify-content: space-between;
+}
+.commentsFluid .commentsContainer .comments .descUser {
+  width: 30%;
+}
+.commentsFluid .commentsContainer .comments .transformational {
+  width: 65%;
+}
+.commentsFluid .commentsContainer .comments .transformational .resultsWrap {
+  margin-top: 25px;
+}
+.commentsFluid .commentsContainer .comments .transformational .results {
+  display: flex;
+}
+.videoYouTubeFluid .videoYouTube {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.videoYouTubeFluid .videoYouTube img {
+  width: 100%;
+}
+.videoYouTubeFluid .videoYouTube iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.earnRewardsFluid {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.earnRewardsFluid .earnRewardsContainer {
+  background: #ffffff;
+}
+.earnRewardsFluid .earnRewardsContainer .earnRewardsWrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.22);
+}
+.earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .earnRewardsInner {
+  position: relative;
+  width: 45%;
+}
+.earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .earnRewardsInner .add {
+  margin-bottom: -59px;
+}
+.earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .earnRewardsInner .emailWrap .name,
+.earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .earnRewardsInner .emailWrap .email {
+  margin-top: 5px !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+  width: 100% !important;
+  border: none !important;
+  font-size: 18px !important;
+  font-family: 'SofiaProRegular' !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  color: #1c2026 !important;
+  line-height: 1.4em !important;
+  border-bottom: 2px solid #1c2026 !important;
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important;
+  text-indent: 0% !important;
+}
+.earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .earnRewardsInner .emailWrap .name:after,
+.earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .earnRewardsInner .emailWrap .email:after {
+  content: '<svg xmlns="http://www.w3.org/2000/svg" width="38" height="5.5" viewBox="0 0 76 11"> <path fill-rule="evenodd" d="M73.718 6.982l-3.242 3.346a1.425 1.425 0 0 1-2.057 0 1.537 1.537 0 0 1 0-2.121L69.589 7H1.909a1.5 1.5 0 0 1 0-3h67.682l-1.172-1.208a1.536 1.536 0 0 1 0-2.12 1.422 1.422 0 0 1 2.057 0l3.243 3.346c.742.09 1.32.715 1.32 1.482s-.578 1.392-1.321 1.482z"></path> </svg>';
+}
+.earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .earnRewardsInner .emailWrap ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: 'SofiaProRegular';
+  font-weight: normal;
+  font-style: normal;
+  color: #1c2026;
+  line-height: 1.4em;
+}
+.earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .earnRewardsInner .emailWrap ::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: 'SofiaProRegular';
+  font-weight: normal;
+  font-style: normal;
+  color: #1c2026;
+  line-height: 1.4em;
+}
+.earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .earnRewardsInner .emailWrap :-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: 'SofiaProRegular';
+  font-weight: normal;
+  font-style: normal;
+  color: #1c2026;
+  line-height: 1.4em;
+}
+.earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .earnRewardsInner .emailWrap :-moz-placeholder {
+  /* Firefox 18- */
+  font-family: 'SofiaProRegular';
+  font-weight: normal;
+  font-style: normal;
+  color: #1c2026;
+  line-height: 1.4em;
+}
+.earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .accordBtn {
+  width: 100% !important;
+  max-width: 380px;
+}
+.earnRewardsFluid .earnRewardsContainer .earnRewardsWrap #mc_embed_signup #mc-embedded-subscribe-form div.mce_inline_error {
+  padding: 15px 0 0 0 !important;
+  font-family: 'ApercuProMono';
+  font-weight: normal;
+  font-style: normal;
+  margin-bottom: 0 !important;
+}
+.earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .shopImg {
+  width: 42%;
+}
+.earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .shopImg img {
+  margin: 0 auto;
+}
+.descFluid {
+  padding-bottom: 70px;
+}
+.descFluid .descContainer ul li {
+  text-align: left;
+  margin-top: 15px;
+  font-size: 25px;
+  line-height: 1.9em;
+}
+/*Main  End*/
+/*Footer Start*/
+footer .footerFluid {
+  border-top: 2px solid #1c2026;
+}
+footer .footerFluid .footerContainer .footerWrap {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footerFluid .footerContainer .footerWrap .footerInner {
+  padding: 50px;
+  width: 50%;
+}
+footer .footerFluid .footerContainer .footerWrap .footerInner .h5 {
+  font-size: 30px;
+  text-transform: none;
+  line-height: 1.2em;
+}
+footer .footerFluid .footerContainer .footerWrap .footerInner p {
+  font-size: 15px;
+  font-family: 'ApercuProMono';
+  font-weight: normal;
+  font-style: normal;
+}
+/*Footer End*/
+/* Media queries*/
+@media (min-width: 0px) and (max-width: 320px) {
+  .mobileDesk {
+    display: block;
+  }
+  .userMobile {
+    display: block;
+  }
+  .user {
+    display: none;
+  }
+  .accordBtn {
+    height: 45px;
+  }
+  .accordBtn span {
+    font-size: 17px;
+  }
+  .h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+  }
+  .h3 {
+    font-size: 25px;
+  }
+  .h5 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.4em;
+  }
+  .add {
+    width: 200px;
+    height: 60px;
+    bottom: -37px;
+    left: 8.5px;
+  }
+  .mainTitle {
+    margin-top: 20px;
+    padding-bottom: 0;
+  }
+  .bannerTextMobile {
+    display: block;
+    font-family: 'Sofia Pro Medium';
+    font-weight: 500;
+    font-style: normal;
+    background: #edf8f9;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 27px;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+  .headerFluid {
+    padding-top: 30px;
+  }
+  .headerFluid .headerContainer .coachellaMobile {
+    display: block;
+  }
+  .headerFluid .headerContainer .coachellaDesk {
+    display: none;
+  }
+  .headerFluid .headerContainer .h2 {
+    font-size: 20px;
+  }
+  .headerFluid .headerContainer .h2 span {
+    display: inline-block;
+  }
+  .headerFluid .headerContainer .shopWrap {
+    flex-direction: column;
+  }
+  .headerFluid .headerContainer .shopT {
+    text-align: center;
+    order: 2;
+    width: 100%;
+    padding: 15px 25px 36px 25px;
+  }
+  .headerFluid .headerContainer .shopImg {
+    order: 1;
+    width: 100%;
+  }
+  .headerFluid .headerContainer .shopImg img {
+    margin: 0 auto;
+  }
+  .headerFluid .headerContainer .add {
+    width: 83%;
+    bottom: -43px;
+  }
+  .headerFluid .headerContainer .h5 {
+    margin-top: 10px;
+    line-height: 1;
+    font-size: 21px;
+  }
+  .headerFluid .headerContainer .middleDesc {
+    margin-top: 10px;
+  }
+  .headerFluid .headerContainer .accordBtn {
+    height: 55px;
+  }
+  .headerFluid .headerContainer .accordBtn span {
+    font-size: 19px;
+  }
+  .headerFluid .headerContainer .win {
+    font-size: 40px;
+  }
+  .featuredFluid {
+    padding-bottom: 0px;
+  }
+  .featuredFluid .h5 {
+    margin-bottom: 20px;
+  }
+  .getSelfieFluid .getSelfieContainer .form .input {
+    width: 100%;
+  }
+  .getSelfieFluid .getSelfieContainer .selfiewRow {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  .getSelfieFluid .getSelfieContainer .selfieItem {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .getSelfieFluid .getSelfieContainer .selfieItem:after {
+    width: 100%;
+  }
+  .getSelfieFluid .getSelfieContainer .title {
+    margin-top: 0;
+    font-size: 25px;
+  }
+  .getSelfieFluid .getSelfieContainer .desc {
+    font-size: 14px;
+  }
+  .getSelfieFluid .getSelfieContainer .form .input {
+    height: 55px;
+    margin-bottom: 13px;
+    font-size: 19px;
+  }
+  .getSelfieFluid .getSelfieContainer .form ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 19px;
+  }
+  .getSelfieFluid .getSelfieContainer .form ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 19px;
+  }
+  .getSelfieFluid .getSelfieContainer .form :-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: 19px;
+  }
+  .getSelfieFluid .getSelfieContainer .form :-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 19px;
+  }
+  .getSelfieFluid .getSelfieContainer .accordBtn {
+    height: 55px;
+    margin-top: 10px;
+  }
+  .getSelfieFluid .getSelfieContainer .accordBtn span {
+    font-size: 19px;
+  }
+  .whyNerdFluid {
+    padding-bottom: 30px;
+  }
+  .whyNerdFluid .whyNerdContainer .h2 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .whyNerdFluid .whyNerdContainer .nerdItem {
+    width: 100%;
+  }
+  .getSelfieFluid {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .getSelfieFluid .getSelfieContainer .h2:before {
+    top: -50px;
+    height: 50%;
+  }
+  .getSelfieFluid .getSelfieContainer img {
+    width: 80px;
+  }
+  .getSelfieFluid .getSelfieContainer ul {
+    margin-top: 0;
+  }
+  .getSelfieFluid .getSelfieContainer ul li {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  .acneFluid {
+    padding-top: 8px;
+    padding-bottom: 0px;
+  }
+  .acneFluid .acneContainer .h2 {
+    padding-bottom: 10px;
+  }
+  .acneFluid .acneContainer .h3 {
+    padding-top: 20px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .acneFluid .acneContainer .acneWrap {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner p {
+    padding-bottom: 20px;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .price {
+    padding-left: 0;
+    font-size: 25px;
+    padding-bottom: 0;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerDesc {
+    width: 100%;
+    order: 2;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImg {
+    order: 1;
+    margin: 17px auto 0 auto;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImg img {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImgCC img {
+    width: auto;
+    height: 200px;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImgCream img {
+    height: 100px;
+    width: auto;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImgAT img {
+    width: auto;
+    margin-right: auto;
+    padding-left: 33px;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImgExtractor {
+    margin: 20px auto 0 auto;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImgExtractor {
+    position: static;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInnerAT,
+  .acneFluid .acneContainer .acneWrap .acneLeftCream {
+    background: #ffffff;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInnerTreatment p {
+    width: 100%;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInnerTreatment .acneInnerImg img {
+    width: 100%;
+  }
+  .acneFluid .acneContainer .acneWrap2 {
+    padding-top: 0px;
+  }
+  .acneFluid .acneContainer .acneLeft {
+    background: #edf8f9;
+  }
+  .acneTreatmentSystemFluid {
+    min-height: 350px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer {
+    width: auto;
+    text-align: center;
+    padding: 0;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .h3 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    padding-top: 15px;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap {
+    flex-direction: column;
+    position: static;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .systemInnerDesc {
+    width: 100%;
+    order: 2;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .systemInnerDesc p {
+    padding-bottom: 20px;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .systemInnerDesc .price {
+    padding-left: 0;
+    font-size: 25px;
+    padding-bottom: 0;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .systemInnerImg {
+    width: 100%;
+    order: 1;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .systemInnerImg .systemInnerImgGroup {
+    margin-left: 25px;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .add {
+    bottom: -40px;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .anceLastWrap {
+    margin-bottom: -10px;
+    margin-left: 20px;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .acneCCWrap {
+    margin-left: 0;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .price {
+    text-align: center;
+  }
+  .commentsFluid {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .commentsFluid .commentsContainer .slider {
+    margin-top: 0;
+  }
+  .commentsFluid .commentsContainer .comments {
+    width: 100%;
+    flex-direction: column;
+    padding: 5px;
+  }
+  .commentsFluid .commentsContainer .comments .starsWrap {
+    padding-top: 20px;
+  }
+  .commentsFluid .commentsContainer .comments .stars img {
+    margin: 0 auto;
+  }
+  .commentsFluid .commentsContainer .comments .imageWrap {
+    width: 100%;
+  }
+  .commentsFluid .commentsContainer .comments .imageWrap img {
+    margin: 0 auto 20px auto;
+  }
+  .commentsFluid .commentsContainer .comments .descUserWrap {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .commentsFluid .commentsContainer .comments .descUserWrap .descUser,
+  .commentsFluid .commentsContainer .comments .descUserWrap .transformational {
+    width: 100%;
+  }
+  .commentsFluid .commentsContainer .comments .descUserWrap .transformational .resultsDescInner {
+    font-size: 14px;
+  }
+  .commentsFluid .commentsContainer .comments .resultsDesc {
+    margin-top: 10px;
+    padding-right: 0;
+    flex-direction: column;
+  }
+  .commentsFluid .commentsContainer .comments .resultsDescInner {
+    margin-right: 0;
+  }
+  .commentsFluid .commentsContainer .comments .resultHr {
+    width: 100%;
+  }
+  .commentsFluid .commentsContainer .comments .hr {
+    width: 33px;
+  }
+  .earnRewardsFluid {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .earnRewardsFluid .earnRewardsContainer .earnRewardsWrap {
+    padding: 0;
+    padding-top: 30px;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .earnRewardsInner {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    width: 100%;
+    order: 2;
+  }
+  .earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .earnRewardsInner .add {
+    margin-bottom: -15px;
+    width: 200px;
+    left: -12px;
+  }
+  .earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .shopImg {
+    width: 100%;
+    order: 1;
+  }
+  .earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .shopImg img {
+    margin: 0 auto;
+  }
+  .descFluid {
+    padding-top: 0;
+    padding-bottom: 35px;
+  }
+  .descFluid .descContainer ul li {
+    font-size: 15px;
+  }
+  footer .footerFluid {
+    padding-top: 7px;
+    padding-bottom: 20px;
+  }
+  footer .footerFluid .footerContainer .footerWrap {
+    flex-direction: column;
+  }
+  footer .footerFluid .footerContainer .footerWrap .footerInner {
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+  }
+  footer .footerFluid .footerContainer .footerWrap .footerInner .h5 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  footer .footerFluid .footerContainer .footerWrap .footerInner p {
+    line-height: 1.5em;
+  }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  .mobileDesk {
+    display: block;
+  }
+  .userMobile {
+    display: block;
+  }
+  .user {
+    display: none;
+  }
+  .accordBtn {
+    height: 45px;
+  }
+  .accordBtn span {
+    font-size: 17px;
+  }
+  .h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+  }
+  .h3 {
+    font-size: 25px;
+  }
+  .h5 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.4em;
+  }
+  .add {
+    width: 200px;
+    height: 60px;
+    bottom: -37px;
+    left: 8.5px;
+  }
+  .mainTitle {
+    margin-top: 20px;
+    padding-bottom: 0;
+  }
+  .bannerTextMobile {
+    display: block;
+    font-family: 'Sofia Pro Medium';
+    font-weight: 500;
+    font-style: normal;
+    background: #edf8f9;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 27px;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+  .headerFluid {
+    padding-top: 30px;
+  }
+  .headerFluid .headerContainer .coachellaMobile {
+    display: block;
+  }
+  .headerFluid .headerContainer .coachellaDesk {
+    display: none;
+  }
+  .headerFluid .headerContainer .h2 {
+    font-size: 20px;
+  }
+  .headerFluid .headerContainer .h2 span {
+    display: inline-block;
+  }
+  .headerFluid .headerContainer .shopWrap {
+    flex-direction: column;
+  }
+  .headerFluid .headerContainer .shopT {
+    text-align: center;
+    order: 2;
+    width: 100%;
+    padding: 15px 25px 36px 25px;
+  }
+  .headerFluid .headerContainer .shopImg {
+    order: 1;
+    width: 100%;
+  }
+  .headerFluid .headerContainer .shopImg img {
+    margin: 0 auto;
+  }
+  .headerFluid .headerContainer .add {
+    width: 83%;
+    bottom: -43px;
+  }
+  .headerFluid .headerContainer .h5 {
+    margin-top: 10px;
+    line-height: 1;
+    font-size: 21px;
+  }
+  .headerFluid .headerContainer .middleDesc {
+    margin-top: 10px;
+  }
+  .headerFluid .headerContainer .accordBtn {
+    height: 55px;
+  }
+  .headerFluid .headerContainer .accordBtn span {
+    font-size: 19px;
+  }
+  .headerFluid .headerContainer .win {
+    font-size: 40px;
+  }
+  .featuredFluid {
+    padding-bottom: 0px;
+  }
+  .featuredFluid .h5 {
+    margin-bottom: 20px;
+  }
+  .getSelfieFluid .getSelfieContainer .form .input {
+    width: 100%;
+  }
+  .getSelfieFluid .getSelfieContainer .selfiewRow {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  .getSelfieFluid .getSelfieContainer .selfieItem {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .getSelfieFluid .getSelfieContainer .selfieItem:after {
+    width: 100%;
+  }
+  .getSelfieFluid .getSelfieContainer .title {
+    margin-top: 0;
+    font-size: 25px;
+  }
+  .getSelfieFluid .getSelfieContainer .desc {
+    font-size: 14px;
+  }
+  .getSelfieFluid .getSelfieContainer .form .input {
+    height: 55px;
+    margin-bottom: 13px;
+    font-size: 19px;
+  }
+  .getSelfieFluid .getSelfieContainer .form ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 19px;
+  }
+  .getSelfieFluid .getSelfieContainer .form ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 19px;
+  }
+  .getSelfieFluid .getSelfieContainer .form :-ms-input-placeholder {
+    /* IE 10+ */
+    font-size: 19px;
+  }
+  .getSelfieFluid .getSelfieContainer .form :-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 19px;
+  }
+  .getSelfieFluid .getSelfieContainer .accordBtn {
+    height: 55px;
+    margin-top: 10px;
+  }
+  .getSelfieFluid .getSelfieContainer .accordBtn span {
+    font-size: 19px;
+  }
+  .whyNerdFluid {
+    padding-bottom: 30px;
+  }
+  .whyNerdFluid .whyNerdContainer .h2 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .whyNerdFluid .whyNerdContainer .nerdItem {
+    width: 100%;
+  }
+  .getSelfieFluid {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+  .getSelfieFluid .getSelfieContainer .h2:before {
+    top: -50px;
+    height: 50%;
+  }
+  .getSelfieFluid .getSelfieContainer img {
+    width: 80px;
+  }
+  .getSelfieFluid .getSelfieContainer ul {
+    margin-top: 0;
+  }
+  .getSelfieFluid .getSelfieContainer ul li {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  .getSelfieFluid .getSelfieContainer .accordBtn {
+    max-width: 300px;
+  }
+  .acneFluid {
+    padding-top: 8px;
+    padding-bottom: 0px;
+  }
+  .acneFluid .acneContainer .h2 {
+    padding-bottom: 10px;
+  }
+  .acneFluid .acneContainer .h3 {
+    padding-top: 20px;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+  .acneFluid .acneContainer .acneWrap {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner p {
+    padding-bottom: 20px;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .price {
+    padding-left: 0;
+    font-size: 25px;
+    padding-bottom: 0;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerDesc {
+    width: 100%;
+    order: 2;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImg {
+    order: 1;
+    margin: 17px auto 0 auto;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImg img {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImgCC img {
+    width: auto;
+    height: 200px;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImgCream img {
+    height: 100px;
+    width: auto;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImgAT img {
+    width: auto;
+    margin-right: auto;
+    padding-left: 33px;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImgExtractor {
+    margin: 20px auto 0 auto;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImgExtractor {
+    position: static;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInnerAT,
+  .acneFluid .acneContainer .acneWrap .acneLeftCream {
+    background: #ffffff;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInnerTreatment p {
+    width: 100%;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInnerTreatment .acneInnerImg img {
+    width: 100%;
+  }
+  .acneFluid .acneContainer .acneWrap2 {
+    padding-top: 0px;
+  }
+  .acneFluid .acneContainer .acneLeft {
+    background: #edf8f9;
+  }
+  .acneTreatmentSystemFluid {
+    min-height: 350px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer {
+    width: auto;
+    text-align: center;
+    padding: 0;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .h3 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    padding-top: 15px;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap {
+    flex-direction: column;
+    position: static;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .systemInnerDesc {
+    width: 100%;
+    order: 2;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .systemInnerDesc p {
+    padding-bottom: 20px;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .systemInnerDesc .price {
+    padding-left: 0;
+    font-size: 25px;
+    padding-bottom: 0;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .systemInnerImg {
+    width: 100%;
+    order: 1;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .systemInnerImg .systemInnerImgGroup {
+    margin-left: 25px;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .add {
+    bottom: -40px;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .anceLastWrap {
+    margin-bottom: -10px;
+    margin-left: 20px;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .acneCCWrap {
+    margin-left: 0;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .price {
+    text-align: center;
+  }
+  .commentsFluid {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .commentsFluid .commentsContainer .slider {
+    margin-top: 0;
+  }
+  .commentsFluid .commentsContainer .comments {
+    width: 100%;
+    flex-direction: column;
+    padding: 5px;
+  }
+  .commentsFluid .commentsContainer .comments .starsWrap {
+    padding-top: 20px;
+  }
+  .commentsFluid .commentsContainer .comments .stars img {
+    margin: 0 auto;
+  }
+  .commentsFluid .commentsContainer .comments .imageWrap {
+    width: 100%;
+  }
+  .commentsFluid .commentsContainer .comments .imageWrap img {
+    margin: 0 auto 20px auto;
+  }
+  .commentsFluid .commentsContainer .comments .descUserWrap {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .commentsFluid .commentsContainer .comments .descUserWrap .descUser,
+  .commentsFluid .commentsContainer .comments .descUserWrap .transformational {
+    width: 100%;
+  }
+  .commentsFluid .commentsContainer .comments .descUserWrap .transformational .resultsDescInner {
+    font-size: 14px;
+  }
+  .commentsFluid .commentsContainer .comments .resultsDesc {
+    margin-top: 10px;
+    padding-right: 0;
+    flex-direction: column;
+  }
+  .commentsFluid .commentsContainer .comments .resultsDescInner {
+    margin-right: 0;
+  }
+  .commentsFluid .commentsContainer .comments .resultHr {
+    width: 100%;
+  }
+  .commentsFluid .commentsContainer .comments .hr {
+    width: 33px;
+  }
+  .earnRewardsFluid {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .earnRewardsFluid .earnRewardsContainer .earnRewardsWrap {
+    padding: 0;
+    padding-top: 30px;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .earnRewardsInner {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    width: 100%;
+    order: 2;
+  }
+  .earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .earnRewardsInner .add {
+    margin-bottom: -15px;
+    width: 200px;
+    left: -12px;
+  }
+  .earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .shopImg {
+    width: 100%;
+    order: 1;
+  }
+  .earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .shopImg img {
+    margin: 0 auto;
+  }
+  .descFluid {
+    padding-top: 0;
+    padding-bottom: 35px;
+  }
+  .descFluid .descContainer ul li {
+    font-size: 15px;
+  }
+  footer .footerFluid {
+    padding-top: 7px;
+    padding-bottom: 20px;
+  }
+  footer .footerFluid .footerContainer .footerWrap {
+    flex-direction: column;
+  }
+  footer .footerFluid .footerContainer .footerWrap .footerInner {
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+  }
+  footer .footerFluid .footerContainer .footerWrap .footerInner .h5 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  footer .footerFluid .footerContainer .footerWrap .footerInner p {
+    line-height: 1.5em;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .mobileDesk {
+    display: block;
+  }
+  .price {
+    padding-left: 0;
+    margin-bottom: -5px;
+    font-size: 35px;
+  }
+  .userMobile {
+    display: block;
+  }
+  .h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 37px;
+  }
+  .h3 {
+    font-size: 40px;
+  }
+  .h5 {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.6em;
+  }
+  .add {
+    width: 250px;
+  }
+  .bannerTextMobile {
+    display: block;
+    font-family: 'Sofia Pro Medium';
+    font-weight: 500;
+    font-style: normal;
+    background: #edf8f9;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 27px;
+    margin-bottom: 0;
+  }
+  .headerFluid {
+    padding-top: 30px;
+  }
+  .headerFluid .headerContainer {
+    width: 445px;
+  }
+  .headerFluid .headerContainer .coachellaMobile {
+    display: block;
+  }
+  .headerFluid .headerContainer .coachellaDesk {
+    display: none;
+  }
+  .headerFluid .headerContainer .h2 {
+    font-size: 30px;
+  }
+  .headerFluid .headerContainer .h2 span {
+    display: inline-block;
+  }
+  .headerFluid .headerContainer .shopWrap {
+    flex-direction: column;
+  }
+  .headerFluid .headerContainer .shopT {
+    text-align: center;
+    order: 2;
+    width: 100%;
+    padding: 15px 25px 38px 25px;
+  }
+  .headerFluid .headerContainer .shopImg {
+    order: 1;
+    width: 100%;
+  }
+  .headerFluid .headerContainer .shopImg img {
+    margin: 0 auto;
+  }
+  .headerFluid .headerContainer .add {
+    bottom: -53px;
+  }
+  .headerFluid .headerContainer .h5 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    line-height: 1.2em;
+  }
+  .headerFluid .headerContainer .middleDesc {
+    margin-top: 10px;
+  }
+  .headerFluid .headerContainer .accordBtn {
+    height: 55px;
+  }
+  .headerFluid .headerContainer .accordBtn span {
+    font-size: 19px;
+  }
+  .headerFluid .headerContainer .win {
+    font-size: 70px;
+  }
+  .featuredFluid {
+    padding-top: 100px;
+    padding-bottom: 24px;
+  }
+  .getSelfieFluid .getSelfieContainer .form .input {
+    width: 100%;
+  }
+  .getSelfieFluid .getSelfieContainer .selfiewRow {
+    margin-top: 40px;
+  }
+  .getSelfieFluid .getSelfieContainer .h2:before {
+    top: -70px;
+    height: 65%;
+  }
+  .getSelfieFluid .getSelfieContainer .selfiewRow {
+    flex-direction: column;
+  }
+  .getSelfieFluid .getSelfieContainer .selfieItem {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .getSelfieFluid .getSelfieContainer .selfieItem:after {
+    width: 100%;
+  }
+  .getSelfieFluid .getSelfieContainer .title {
+    margin-top: 0;
+  }
+  .getSelfieFluid .getSelfieContainer .desc {
+    font-size: 20px;
+  }
+  .getSelfieFluid .getSelfieContainer .nerdItem p {
+    width: 80%;
+  }
+  .getSelfieFluid {
+    padding-bottom: 40px;
+  }
+  .getSelfieFluid .getSelfieContainer ul {
+    margin-top: 0;
+  }
+  .getSelfieFluid .getSelfieContainer ul li {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  .getSelfieFluid .getSelfieContainer .accordBtn {
+    margin-top: 20px;
+  }
+  .acneFluid {
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+  .acneFluid .acneContainer .h2 {
+    padding-bottom: 20px;
+  }
+  .acneFluid .acneContainer .h3 {
+    padding-top: 20px;
+    margin-top: 0;
+  }
+  .acneFluid .acneContainer .acneWrap {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 70px;
+    padding-bottom: 30px;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner p {
+    padding-bottom: 20px;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerDesc {
+    width: 100%;
+    order: 2;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImg {
+    order: 1;
+    margin: 20px auto 0 auto;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImg img {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImgAT img {
+    width: 100%;
+    margin-right: -28px;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImgExtractor {
+    margin: 20px auto 0 auto;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInnerAT,
+  .acneFluid .acneContainer .acneWrap .acneLeftCream {
+    background: #ffffff;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInnerTreatment p {
+    width: 100%;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInnerTreatment .acneInnerImg img {
+    width: 100%;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImgExtractor {
+    position: static;
+  }
+  .acneFluid .acneContainer .acneLeft {
+    background: #edf8f9;
+  }
+  .acneFluid .acneContainer .acneWrap2 {
+    padding-top: 0px;
+  }
+  .whyNerdFluid .whyNerdContainer {
+    width: 100%;
+  }
+  .whyNerdFluid .whyNerdContainer .nerdItem {
+    width: 50%;
+  }
+  .acneTreatmentSystemFluid {
+    margin-top: 0px;
+    margin-bottom: 40px;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer {
+    width: auto;
+    text-align: center;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .h3 {
+    padding-top: 20px;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap {
+    flex-direction: column;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .systemInnerDesc {
+    width: 100%;
+    order: 2;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .systemInnerDesc p {
+    padding-bottom: 20px;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .systemInnerImg {
+    width: 100%;
+    order: 1;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .systemInnerImg .systemInnerImgGroup {
+    margin-left: 50px;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .anceLastWrap {
+    margin-bottom: -19px;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .price {
+    text-align: center;
+  }
+  .earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .earnRewardsInner .add {
+    margin-bottom: -41px;
+  }
+  .commentsFluid .commentsContainer .slider {
+    margin-top: 0;
+  }
+  .commentsFluid .commentsContainer .comments {
+    flex-direction: column;
+  }
+  .commentsFluid .commentsContainer .comments .resultHr {
+    width: 100%;
+  }
+  .commentsFluid .commentsContainer .comments .imageWrap,
+  .commentsFluid .commentsContainer .comments .descUserWrap {
+    width: 100%;
+  }
+  .commentsFluid .commentsContainer .comments .stars img {
+    margin: 0 auto;
+  }
+  .commentsFluid .commentsContainer .comments .imageWrap {
+    width: 100%;
+  }
+  .commentsFluid .commentsContainer .comments .imageWrap img {
+    margin: 0 auto 20px auto;
+  }
+  .commentsFluid .commentsContainer .comments .descUserWrap {
+    flex-direction: column;
+    width: 100%;
+  }
+  .commentsFluid .commentsContainer .comments .descUserWrap .descUser {
+    text-align: center;
+    width: 100%;
+  }
+  .commentsFluid .commentsContainer .comments .descUserWrap .transformational {
+    width: 100%;
+  }
+  .commentsFluid .commentsContainer .comments .descUserWrap .transformational {
+    padding-top: 20px;
+    text-align: center;
+  }
+  .commentsFluid .commentsContainer .comments .descUserWrap .transformational .resultsDescInner {
+    font-size: 14px;
+  }
+  .commentsFluid .commentsContainer .comments .resultsDesc {
+    margin-top: 20px;
+    flex-direction: column;
+    padding-right: 0;
+  }
+  .commentsFluid .commentsContainer .comments .resultsDescInner {
+    margin-right: 0;
+    padding-bottom: 0;
+  }
+  .earnRewardsFluid {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .earnRewardsFluid .earnRewardsContainer .earnRewardsWrap {
+    padding-top: 30px;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .earnRewardsInner {
+    width: 100%;
+    order: 2;
+  }
+  .earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .shopImg {
+    width: 100%;
+    order: 1;
+  }
+  .earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .shopImg img {
+    margin: 0 auto;
+  }
+  .descFluid {
+    padding-top: 0px;
+    padding-bottom: 30px;
+  }
+  .descFluid .descContainer {
+    width: 100%;
+  }
+  .descFluid .descContainer ul li {
+    font-size: 18px;
+    margin-top: 12px;
+  }
+  footer .footerFluid {
+    padding-bottom: 15px;
+  }
+  footer .footerFluid .footerContainer {
+    width: 100%;
+  }
+  footer .footerFluid .footerContainer .footerWrap {
+    flex-direction: column;
+  }
+  footer .footerFluid .footerContainer .footerWrap .footerInner {
+    padding: 10px 0;
+    width: 100%;
+  }
+  footer .footerFluid .footerContainer .footerWrap .footerInner .h5 {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .price {
+    padding-left: 0;
+  }
+  .h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 37px;
+  }
+  .h3 {
+    font-size: 40px;
+  }
+  .h5 {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 18px;
+    line-height: 1.6em;
+  }
+  .add {
+    width: 250px;
+  }
+  .headerFluid .headerContainer .h2 span {
+    display: inline-block;
+  }
+  .headerFluid .headerContainer .shopT {
+    text-align: center;
+    order: 2;
+    padding: 15px 25px 50px 25px;
+  }
+  .headerFluid .headerContainer .shopImg {
+    order: 1;
+  }
+  .headerFluid .headerContainer .shopImg iframe {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .headerFluid .headerContainer .add {
+    bottom: -53px;
+  }
+  .headerFluid .headerContainer .middleDesc {
+    margin-top: 10px;
+  }
+  .headerFluid .headerContainer .h2 {
+    font-size: 25px;
+  }
+  .headerFluid .headerContainer .h5 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .headerFluid .headerContainer .win {
+    font-size: 65px;
+  }
+  .featuredFluid {
+    padding-top: 115px;
+    padding-bottom: 35px;
+  }
+  .featuredFluid .featuredContainer {
+    width: 730px;
+  }
+  .getSelfieFluid {
+    padding-bottom: 30px;
+  }
+  .getSelfieFluid .getSelfieContainer .desc {
+    font-size: 20px;
+  }
+  .getSelfieFluid .getSelfieContainer .h2:before {
+    height: 65%;
+  }
+  .descFluid .descContainer ul li {
+    font-size: 20px;
+  }
+  .getSelfieFluid .getSelfieContainer .h2:before {
+    top: -70px;
+  }
+  .getSelfieFluid .getSelfieContainer ul li {
+    font-size: 20px;
+  }
+  .acneFluid {
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+  .acneFluid .acneContainer .acneLeft {
+    background: #edf8f9;
+  }
+  .acneFluid .acneContainer .h2 {
+    padding-bottom: 20px;
+  }
+  .acneFluid .acneContainer .h3 {
+    padding-top: 20px;
+    margin-top: 0;
+  }
+  .acneFluid .acneContainer .acneWrap {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner {
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 70px;
+    padding-bottom: 30px;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImgExtractor {
+    position: static;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner p {
+    padding-bottom: 20px;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerDesc {
+    width: 100%;
+    order: 2;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImg {
+    order: 1;
+    margin: 20px auto 0 auto;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImg img {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImgAT img {
+    width: 100%;
+    margin-right: -30px;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInner .acneInnerImgExtractor {
+    margin: 20px auto 0 auto;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInnerAT,
+  .acneFluid .acneContainer .acneWrap .acneLeftCream {
+    background: #ffffff;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInnerCC .acneInnerImg img {
+    width: 80%;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInnerTreatment p {
+    width: 100%;
+  }
+  .acneFluid .acneContainer .acneWrap .acneInnerTreatment .acneInnerImg img {
+    width: 100%;
+  }
+  .acneFluid .acneContainer .acneWrap2 {
+    padding-top: 0px;
+  }
+  .acneTreatmentSystemFluid {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer {
+    text-align: center;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .h3 {
+    padding-top: 20px;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap {
+    flex-direction: column;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .systemInnerDesc {
+    width: 100%;
+    order: 2;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .systemInnerDesc p {
+    padding-bottom: 20px;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .systemInnerImg {
+    width: 100%;
+    order: 1;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .systemInnerImg .systemInnerImgGroup {
+    margin-left: 85px;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .price {
+    text-align: center;
+  }
+  .list-inline {
+    margin-left: 0;
+  }
+  .earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .earnRewardsInner .add {
+    margin-bottom: -41px;
+  }
+  .commentsFluid .commentsContainer .slider {
+    margin-top: 0;
+  }
+  .commentsFluid .commentsContainer .comments {
+    flex-direction: column;
+  }
+  .commentsFluid .commentsContainer .comments .resultHr {
+    width: 100%;
+  }
+  .commentsFluid .commentsContainer .comments .imageWrap img {
+    margin-bottom: 20px;
+  }
+  .commentsFluid .commentsContainer .comments .imageWrap,
+  .commentsFluid .commentsContainer .comments .descUserWrap {
+    width: 100%;
+  }
+  .commentsFluid .commentsContainer .comments .resultsDesc {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .commentsFluid .commentsContainer .comments .resultsDescInner {
+    margin-right: 20px;
+    padding-bottom: 0px;
+  }
+  .earnRewardsFluid {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .earnRewardsFluid .earnRewardsContainer .earnRewardsWrap {
+    padding-top: 30px;
+  }
+  .earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .shopImg {
+    width: 50%;
+  }
+  .descFluid {
+    padding-top: 0px;
+    padding-bottom: 50px;
+  }
+  footer .footerFluid .footerContainer .footerWrap .footerInner {
+    padding: 15px;
+  }
+  footer .footerFluid .footerContainer .footerWrap .footerInner .h5 {
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .h2 {
+    padding-bottom: 20px;
+    font-size: 50px;
+  }
+  .h3 {
+    font-size: 40px;
+  }
+  .h5 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 1.8em;
+  }
+  .add {
+    width: 330px;
+  }
+  .headerFluid .headerContainer .shopT {
+    padding-top: 10px;
+    width: 55%;
+  }
+  .headerFluid .headerContainer .shopImg {
+    width: 45%;
+  }
+  .headerFluid .headerContainer .add {
+    bottom: -75px;
+  }
+  .headerFluid .headerContainer .middleDesc {
+    margin-top: 10px;
+  }
+  .headerFluid .headerContainer .win {
+    font-size: 90px;
+  }
+  .headerFluid .headerContainer .h5 {
+    margin-top: 10px;
+  }
+  .getSelfieFluid {
+    padding-bottom: 60px;
+  }
+  .getSelfieFluid .getSelfieContainer .h2:before {
+    height: 52%;
+  }
+  .commentsFluid .commentsContainer .comments .hr {
+    width: 30px;
+  }
+  .acneFluid .acneContainer .acneInner .acneInnerImgAT {
+    margin-top: 30px;
+  }
+  .acneFluid .acneContainer .acneInner .acneInnerImgExtractor {
+    bottom: 106px;
+  }
+  .acneFluid .acneContainer .acneInner .acneInnerImgCream img {
+    margin-top: 192px;
+  }
+  .acneFluid .acneContainer .acneInnerTreatment p {
+    width: 64%;
+  }
+  .acneTreatmentSystemFluid {
+    margin-top: 30px;
+    margin-bottom: 80px;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .h3 {
+    padding-top: 0;
+  }
+  .acneTreatmentSystemFluid .acneTreatmentSystemContainer .systemWrap .add {
+    bottom: -103px;
+  }
+  .earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .shopImg {
+    width: 48%;
+  }
+  .earnRewardsFluid .earnRewardsContainer .earnRewardsWrap .earnRewardsInner .add {
+    margin-bottom: -41px;
+  }
+  footer .footerFluid .footerContainer .footerWrap .footerInner {
+    padding: 25px 20px;
+  }
+}
